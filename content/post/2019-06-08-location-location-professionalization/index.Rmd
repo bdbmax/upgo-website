@@ -1,0 +1,32 @@
+---
+title: 'Location, location, and professionalization: Paper published in Regional Studies, Regional Science'
+date: '2019-04-05'
+type: "post"
+slug: location-location-professionalization-paper
+categories: []
+tags:
+  - Publication
+  - Short-term rentals
+  - New York City
+subtitle: ''
+summary: "Open access publication of hedonic regression model of Airbnb in New York City"
+authors:
+  - Danielle Kerrigan
+lastmod: '2019-04-05T17:15:06-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: 'smart'
+  preview_only: no
+projects:
+  - short-term-rentals
+---
+
+Along with Robbin Deboosere and Prof. Ahmed El-Geneidy of the Transportation Research at McGill group (TRAM), we’re excited to announce the open access publication of [Location, location, and professionalization: A multilevel hedonic analysis of Airbnb listing prices and revenue](https://www.tandfonline.com/doi/full/10.1080/21681376.2019.1592699). Using hedonic modeling techniques we investigated what factors influence price per night and montlhy revenue of Airbnb listings. We found:
+
+- Locational factors--above all, transit accessibility to jobs--and neighbourhood variation have a large impact on both price per night and monthly revenue
+- Professionalization of the short-term rental market is driving more revenue to a narrower segment of hosts
+
+Together these findings suggest that Airbnb hosts earn a significant premium by converting long-term housing in transit-accessible residential neighbourhoods. In turn, this incentivizes hosts to replace existing long-term residents with short-term guests, forcing those in search of housing to less accessible neighbourhoods. 
+
+Another UPGo paper, [Airbnb and the rent gap](/publication/airbnb-and-the-rent-gap), shows how these incentives are linked to the gentrification of New York City.

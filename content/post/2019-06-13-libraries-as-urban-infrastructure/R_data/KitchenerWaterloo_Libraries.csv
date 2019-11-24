@@ -1,0 +1,68 @@
+﻿X,Y,OBJECTID,Name,Municipality,Address,Organization,Phone,Website,IN_RMW
+-80.448776387708534,43.285496306514688,1,Ayr Branch Library,North Dumfries,137 Stanley Street,Region Of Waterloo Library,519-632-7298,http://www.rwl.library.on.ca/en/aboutus/ayrbl.asp,Yes
+-80.664279301841844,43.404192500027662,2,Baden Branch Library,Wilmot,115 Snyder'S Road East,Region Of Waterloo Library,519-634-8933,http://www.rwl.library.on.ca/en/aboutus/badenbl.asp,Yes
+-80.462603712609294,43.510421287438184,3,Bloomingdale Branch Library,Woolwich,860 Sawmill Road East,Region Of Waterloo Library,519-745-3151,http://www.rwl.library.on.ca/en/aboutus/bloombl.asp,Yes
+-80.558709982421092,43.598101286933151,4,Elmira Branch Library,Woolwich,65 Arthur Street South,Region Of Waterloo Library,519-669-5477,http://www.rwl.library.on.ca/en/aboutus/elmirabl.asp,Yes
+-80.729202641288637,43.583800492328031,5,Linwood Branch Library,Wellesley,5279 Ament Line,Region Of Waterloo Library,519-698-2700,http://www.rwl.library.on.ca/en/aboutus/linwoodbl.asp,Yes
+-80.536371444751637,43.352004495115672,6,New Dundee Branch Library,Wilmot,136 Main Street,Region Of Waterloo Library,519-696-3041,http://www.rwl.library.on.ca/en/aboutus/newdundeebl.asp,Yes
+-80.712332942053891,43.378066389445337,7,New Hamburg Branch Library,Wilmot,145 Huron Street,Region Of Waterloo Library,519-662-1112,http://www.rwl.library.on.ca/en/aboutus/newhamburgbl.asp,Yes
+-80.652288769254568,43.523325078594894,8,St. Clements Branch Library,Wellesley,3605 Lobsinger Line,Region Of Waterloo Library,519-699-4341,http://www.rwl.library.on.ca/en/aboutus/stclementsbl.asp,Yes
+-80.554647611325763,43.539090192564345,9,St. Jacobs Branch Library,Woolwich,29 Queensway Drive,Region Of Waterloo Library,519-664-3443,http://www.rwl.library.on.ca/en/aboutus/stjacobsbl.asp,Yes
+-80.763900180183143,43.478826797617636,10,Wellesley Branch Library,Wellesley,1137 Henry Street,Region Of Waterloo Library,519-656-2001,http://www.rwl.library.on.ca/en/aboutus/wellesleybl.asp,Yes
+-80.523298819688762,43.426261935851009,11,Forest Heights Community Library,Kitchener,251 Fischer-Hallman Road,Kitchener Public Library,519-743-0644,http://www.kpl.org/locations/fh.html,Yes
+-80.486313202357707,43.452711133989368,12,Kitchener Main Library,Kitchener,85 Queen Street North,Kitchener Public Library,519-743-0271,http://www.kpl.org/locations/main.html,Yes
+-80.524497369996084,43.465977831800906,13,Waterloo Main Library,Waterloo,35 Albert Street,Waterloo Public Library,519-886-1310,http://www.wpl.ca/location/main-library/,Yes
+-80.544659457990193,43.489094202136428,14,Mccormick Branch Library ,Waterloo,500 Parkside Drive,Waterloo Public Library,519-885-1920,http://www.wpl.ca/location/mccormick-branch/,Yes
+-80.437384159918281,43.394082307750537,15,Pioneer Park Community Library,Kitchener,150 Pioneer Drive,Kitchener Public Library,519-748-2740,http://www.kpl.org/locations/pp.html,Yes
+-80.437051689717308,43.457503712186352,16,Grand River Stanley Park Community Library,Kitchener,175 Indian Road,Kitchener Public Library,519-896-1736,http://www.kpl.org/locations/gr.html,Yes
+-80.309545107614881,43.431208743357153,17,Hespeler Library,Cambridge,5 Tannery Street East,Cambridge Libraries,519-658-4412,http://www.cambridgelibraries.ca/contact,Yes
+-80.318014049240077,43.359464036519576,18,Queen'S Square Library,Cambridge,1 North Square,Cambridge Libraries,519-621-0460,http://www.cambridgelibraries.ca/contact,Yes
+-80.36150842094267,43.397838013937708,19,Preston Library,Cambridge,435 King Street East,Cambridge Libraries,519-653-3632,http://www.cambridgelibraries.ca/contact,Yes
+-80.300343753019561,43.392725877065487,20,Clemens Mill Library,Cambridge,50 Saginaw Parkway,Cambridge Libraries,519-740-6294,http://www.cambridgelibraries.ca/contact,Yes
+-80.425956473197814,43.100962913640871,21,Burford Branch Library,Brant,24 Park Ave,County Of Brant Public Library,519-449-5371,http://olco.canlib.ca/client/brant,No
+-80.374870053239746,43.273352172838067,22,Glen Morris Branch Library,Brant,474 East River Road,County Of Brant Public Library,519-740-2122,http://olco.canlib.ca/client/brant,No
+-80.386018634684504,43.193569773735533,23,Paris Branch Library,Brant,12 William Street,County Of Brant Public Library,519-442-2433,http://olco.canlib.ca/client/brant,No
+-80.373894185442765,43.025472714105923,24,Scotland-Oakland Branch Library,Brant,281 Oakland Road,County Of Brant Public Library,519-446-0181,http://olco.canlib.ca/client/brant,No
+-80.255288017564283,43.250650697146995,25,St. George Branch Library,Brant,78 Main Street North,County Of Brant Public Library,519-448-1300,http://olco.canlib.ca/client/brant,No
+-80.146704987932821,43.236604182311069,27,Lynden Branch Library,Hamilton,110 Lynden Road,Hamilton Public Library,519-647-2571,http://www.hpl.ca/branches/lynden-branch,No
+-79.957562902329713,43.334501824960519,28,Millgrove Branch Library,Hamilton,857 Millgrove Side Road,Hamilton Public Library,905-689-6582,http://www.hpl.ca/branches/millgrove-branch,No
+-80.037628212422334,43.395294944697866,29,Freelton Branch Library,Hamilton,1803 Brock Road,Hamilton Public Library,905-659-7639,http://www.hpl.ca/branches/freelton-branch,No
+-80.005368332849741,43.377207626121979,30,Carlisle Branch Library,Hamilton,1496 Centre Road ,Hamilton Public Library,905-689-8769,http://www.hpl.ca/branches/carlisle-branch,No
+-79.892057607545325,43.334651217035038,31,Waterdown Branch Library,Hamilton,25 Mill Street North,Hamilton Public Library,905-689-6269,http://www.hpl.ca/branches/waterdown-branch,No
+-79.976951135713222,43.225632819752974,32,Ancaster Branch Library,Hamilton,300 Wilson Street East,Hamilton Public Library,905-648-6911,http://www.hpl.ca/branches/ancaster-branch,No
+-80.955328128025215,43.732488682037129,33,Listowel Branch Library,Perth,260 Main Street West,North Perth Public Library,519-291-4621,http://www.northperth.library.on.ca/locations.php,No
+-81.019868416159554,43.666721386579951,34,Atwood Branch Library,Perth,218A Main Street,North Perth Public Library,519-356-2455,http://www.northperth.library.on.ca/locations.php,No
+-81.081958837492152,43.587216724074011,35,Monkton Branch Library,Perth,216 Winstanley Street,North Perth Public Library,519-347-2703,http://www.northperth.library.on.ca/locations.php,No
+-80.841400335429327,42.862486295829953,36,Brownsville Public Library,Oxford,292240 Culloden Road,Oxford County Library,519-877-2938,http://www.ocl.net/Brancheshours/brownsville.aspx,No
+-80.653254569230938,43.023534795270692,37,Burgessville Public Library,Oxford,604 Main Street South,Oxford County Library,519-424-2404,http://www.ocl.net/locations/burgessville/,No
+-80.990029792647277,43.240761735348585,38,Harrington Public Library,Oxford,539 Victoria Street,Oxford County Library,519-475-6909,http://www.ocl.net/locations/harrington/,No
+-80.901109026010147,43.155784713629785,39,Embro Public Library,Oxford,135 Huron Street,Oxford County Library,519-475-4172 ,http://www.ocl.net/locations/embro/,No
+-80.883264804141618,43.037307085812621,40,Ingersoll Public Library,Oxford,130 Oxford Street,Oxford County Library,519-485-2505,http://www.ocl.net/locations/ingersoll/,No
+-80.706262935160694,43.203633742363145,41,Innerkip Public Library,Oxford,695566 17Th Line,Oxford County Library,519-469-3824,http://www.ocl.net/locations/innerkip/,No
+-80.792489402134976,42.958577634420244,42,Mount Elgin Public Library,Oxford,333204 Plank Line,Oxford County Library,519-485-0134 ,http://www.ocl.net/locations/mount_elgin/,No
+-80.597618888568206,42.986495256464082,43,Norwich Public Library,Oxford,10 Tidey Street,Oxford County Library,519-863-3307,http://www.ocl.net/locations/norwich/,No
+-80.604947245296273,42.926267846004606,44,Otterville Public Library,Oxford,207 Main Street West,Oxford County Library,519-879-6984 ,http://www.ocl.net/locations/otterville/,No
+-80.616271366424385,43.305215334321858,45,Plattsville Public Library,Oxford,112 Mill Street East,Oxford County Library,519-684-7390 ,http://www.ocl.net/locations/plattsville/,No
+-80.5268244884317,43.170113550873893,46,Princeton Public Library,Oxford,25 Main Street,Oxford County Library,519-458-4416,http://www.ocl.net/locations/princeton/,No
+-80.835659327376007,43.320163689396985,47,Tavistock Public Library,Oxford,40 Woodstock Street South,Oxford County Library,519-655-3013,http://www.ocl.net/locations/tavistock/,No
+-80.999728526407551,43.057835407371314,48,Thamesford Public Library,Oxford,165 Dundas Street,Oxford County Library,519-285-3219,http://www.ocl.net/locations/thamesford/,No
+-80.922945881116831,43.564780955770615,49,Perth East Public Library,Perth,19  Mill Street East,Perth East Public Library,519-595-8395,http://www.pertheast.library.on.ca/,No
+-81.140880441617199,43.260025368973118,50,St. Mary'S Public Library,Perth,15 Church Street North,St. Mary'S Public Library,519-284-3346,http://www.stmarys.library.on.ca/,No
+-80.985557028191636,43.371030174469063,51,Stratford Public Library,Perth,19 St. Andrew Street,Stratford Public Library,519-271-0220  ,http://www.stratford.library.on.ca/index.htm,No
+-81.191950682551266,43.47209511073671,52,West Perth Public Library,Perth,105 St. Andrew Street,West Perth Public Library,519-348-9234,http://www.westperth.library.on.ca/default.htm,No
+-80.977683224617607,43.971465678382906,53,Clifford Branch Library,Wellington,7 Brown Street North,Wellington County Library,519-327-8328,http://www.wellington.ca/en/discover/cliffordbranch.asp,No
+-80.868596272895047,43.911676186075617,54,Harriston Branch Library,Wellington,88 Mill Street,Wellington County Library,519-338-2396,http://www.wellington.ca/en/discover/harristonbranch.asp,No
+-80.849777694296662,43.833858825716398,55,Palmerston Branch Library,Wellington,265 Bell Street,Wellington County Library,519-343-2142,http://www.wellington.ca/en/discover/palmerstonbranch.asp,No
+-80.736917743894693,43.982745710906627,56,Mount Forest Branch Library,Wellington,118 Main Street North,Wellington County Library,519-323-4541,http://www.wellington.ca/en/discover/mountforestbranch.asp,No
+-80.535323465386739,43.830811850488615,57,Arthur Branch Library,Wellington,110 Charles Street East,Wellington County Library,519-848-3999,http://www.wellington.ca/en/discover/arthurbranch.asp,No
+-80.675972781144637,43.74908239113347,58,Drayton Branch Library,Wellington,106 Wellington Street South,Wellington County Library,519-638-3788,http://www.wellington.ca/en/discover/draytonbranch.asp,No
+-80.430743307667328,43.683707158856798,59,Elora Branch Library,Wellington,144 Geddes Street,Wellington County Library,519-846-0190,http://www.wellington.ca/en/discover/elorabranch.asp,No
+-80.378392261057215,43.704980247968912,60,Fergus Branch Library,Wellington,190 St Andrew Street West,Wellington County Library,519-843-1180,http://www.wellington.ca/en/discover/fergusbranch.asp,No
+-80.39472550442018,43.691418734129478,61,Aboyne Branch Library,Wellington,552 Wellington Road 18,Wellington County Library,519-846-0918 x6222,http://www.wellington.ca/en/discover/aboynebranch.asp,No
+-80.305318938978516,43.581639240617577,62,Marden Branch Library,Wellington,7368 Wellington Road 30,Wellington County Library,519-763-7445,http://www.wellington.ca/en/discover/mardenbranch.asp,No
+-80.149719984173856,43.621713203759029,63,Rockwood Branch Library,Wellington,85 Christie Street,Wellington County Library,519-856-4851,http://www.wellington.ca/en/discover/rockwoodbranch.asp,No
+-80.068513196397404,43.778535041844208,64,Erin Branch Library,Wellington,14 Boland Drive,Wellington County Library,519-833-9762,http://www.wellington.ca/en/discover/erinbranch.asp,No
+-80.146338074580285,43.792771244746909,65,Hillsburgh Branch Library,Wellington,98B Trafalgar Road,Wellington County Library,519-855-4010,http://www.wellington.ca/en/discover/hillsburghbranch.asp,No
+-80.15203594687722,43.472709603184938,66,Puslinch Branch Library,Wellington,29 Wellington Road 46 South,Wellington County Library,519-763-8026,http://www.wellington.ca/en/discover/puslinchbranch.asp,No
+-80.466896789425647,43.420211483123893,67,Country Hills Community Library,Kitchener,1500 Block Line Road,Kitchener Public Library,519-743-3558,http://www.kpl.org/locations/ch.html,Yes
+-80.570788114837015,43.474194879431472,68,John M. Harper Branch Library,Waterloo,500 Fischer-Hallman Rd N,Waterloo Public Library,519-886-1310 x310,http://www.wpl.ca/location/harper-branch/,Yes

@@ -1,0 +1,806 @@
+---
+title: Libraries as urban infrastructure
+date: '2019-06-13'
+slug: libraries-as-urban-infrastructure
+categories: []
+tags:
+  - Libraries
+subtitle: ''
+summary: "An analysis of the demographics of urban library service areas in Canada"
+authors:
+  - charlotte-belot
+  - amy-bolt
+  - danielle-girard
+  - admin
+lastmod: '2019-06-10T17:15:06-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: 'bottom'
+  preview_only: no
+projects:
+  - libraries-as-urban-infrastructure
+output:
+  blogdown::html_page:
+    fig_caption: yes
+---
+As libraries take on a greater role as community centres and fill social-service gaps, we need to understand the challenges they confront as a result of changing demographics and social needs in their local areas.
+
+This preliminary study was requested by the [Canadian Urban Libraries Council](http://www.culc.ca). We conducted a spatial analysis, mapping over 500 urban libraries and a series of census variables to determine how demographics differed within library service areas and the wider city context.
+
+Overall, findings demonstrate systematically higher levels of social need within library walk-sheds, with higher core housing need, lower income, higher unemployment, and more visible minorities and immigrants when compared with surrounding areas.
+
+Below we summarize some key results; the [slides from the accompanying presentation](/talk/canadian-urban-libraries-council-2019) go into more detail on the spatial anlaysis, and address a set of other questions related to libraries as urban social infrastructure.
+
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, include = FALSE}
+
+library(tidyverse)
+library(sf)
+library(cancensus)
+library(units)
+library(extrafont)
+library(tmap)
+library(ggrepel)
+
+st_erase <- function(x, y) st_difference(x, st_union(st_combine(y)))
+
+make_library_service_areas <- function(libraries, CMAs) {
+  lib_buffer <-
+    st_join(libraries, CMAs) %>%
+    group_by(CMA_name) %>%
+    summarize(library = TRUE,
+              geometry = st_union(geometry)) %>%
+    slice(1:nrow(.)) %>% 
+    st_buffer(1000)
+  
+  diff_lib <- suppressWarnings(
+    st_erase(CMAs, lib_buffer) %>%
+      mutate(library = FALSE) %>%
+      select(CMA_name, library, geometry)
+  )
+  
+  rbind(lib_buffer, diff_lib)
+}
+
+st_intersect_summarize <-
+  function(data,
+           poly,
+           group_vars,
+           population,
+           sum_vars,
+           mean_vars) {
+    pop <- enquo(population)
+    
+    data <- data %>%
+      mutate(CT_area = st_area(.))
+    
+    intersects <- suppressWarnings(st_intersection(data, poly)) %>%
+      mutate(
+        int_area_pct = st_area(.data$geometry) / .data$CT_area,
+        population_int = !!pop * int_area_pct
+      ) %>%
+      group_by(!!!group_vars)
+    
+    population <- intersects %>%
+      summarize(!!pop := sum(population_int, na.rm = TRUE))
+    
+    sums <- intersects %>%
+      summarize_at(sum_vars, ~ {
+        sum(. * int_area_pct, na.rm = TRUE) /
+          sum(population_int, na.rm = TRUE)
+      })
+    
+    means <- intersects %>%
+      summarize_at(mean_vars, ~ {
+        sum(. * population_int, na.rm = TRUE) / sum(population_int, na.rm = TRUE)
+      })
+    
+    suppressMessages(reduce(
+      list(
+        population,
+        st_drop_geometry(sums),
+        st_drop_geometry(means)
+      ),
+      full_join
+    ))
+    
+  }
+
+
+### Import libraries ###########################################################
+
+libraries <- suppressWarnings(
+  read_csv("R_data/Canadian_libraries.csv") %>%
+    st_as_sf(coords = c("Longitude", "Latitude"), crs = 4326) %>%
+    st_transform(3347)
+)
+
+
+### Import water ###############################################################
+
+load("R_data/water.Rdata")
+
+
+### Import and process CMAs_2006 and service_areas_2006 ########################
+
+CMAs_2006 <-
+  get_census(dataset = 'CA06', regions = list(C = "Canada"), level = 'CMA',
+             geo_format = "sf") %>%
+  st_transform(3347) %>% 
+  filter(Type == "CMA") %>%
+  select(GeoUID, CMA_name = name)
+
+libraries_2006 <-
+  libraries[lengths(st_within(libraries, CMAs_2006)) > 0,]
+
+CMAs_2006 <-
+  CMAs_2006[lengths(st_contains(CMAs_2006, libraries_2006)) > 0,] %>%
+  mutate(
+    CMA_name = if_else(str_detect(CMA_name, "Mont"), "Montreal (B)", CMA_name),
+    CMA_name = if_else(CMA_name == "Abbotsford (B)",
+                      "Abbotsford - Mission (B)", CMA_name),
+    CMA_name = if_else(
+      CMA_name == "Kitchener (B)",
+      "Kitchener - Cambridge - Waterloo (B)",
+      CMA_name
+    )
+  )
+
+service_areas_2006 <- make_library_service_areas(libraries_2006, CMAs_2006)
+
+
+### Import and process CTs_2006 ################################################
+
+CTs_2006 <-
+  get_census(dataset = "CA06", regions = list(C = "Canada"), level = "CT",
+             vectors = c("v_CA06_582", "v_CA06_2051", "v_CA06_2056",
+                         "v_CA06_1785", "v_CA06_1303"),
+             geo_format = "sf") %>%
+  st_transform(3347) %>%
+  filter(Type == "CT") %>%
+  select(GeoUID, PR_UID, CMA_UID, Population, contains("v_CA")) %>%
+  mutate(CMA_UID = if_else(CMA_UID == "24505" |
+                              CMA_UID == "35505", "505", CMA_UID)) %>%
+  inner_join(st_drop_geometry(CMAs_2006), by = c("CMA_UID" = "GeoUID")) %>%
+  select(GeoUID, PR_UID, CMA_UID, CMA_name, everything()) %>%
+  set_names(c("Geo_UID", "PR_UID", "CMA_UID", "CMA_name", "population",
+              "unemployed_pct", "housing_need_rent", "housing_need_own",
+              "med_income", "visible_minorities", "geometry")) %>%
+  mutate(housing_need = housing_need_rent + housing_need_own) %>%
+  select(Geo_UID, PR_UID, CMA_UID, CMA_name, population, unemployed_pct,
+         housing_need, med_income, visible_minorities, geometry) %>%
+  mutate_at(c("housing_need", "visible_minorities"),
+            list(`pct` = ~ {. / population}))
+
+
+### Import and process CMAs_2016 and service_areas_2016 ########################
+
+CMAs_2016 <-
+  get_census(dataset = 'CA16', regions = list(C = "Canada"), level = 'CMA',
+             geo_format = "sf") %>%
+  st_transform(3347) %>%
+  filter(Type == "CMA") %>%
+  select(GeoUID, CMA_name = name)
+
+libraries_2016 <-
+  libraries[lengths(st_within(libraries, CMAs_2016)) > 0,]
+
+CMAs_2016 <-
+  CMAs_2016[lengths(st_contains(CMAs_2016, libraries_2016)) > 0,] %>%
+  mutate(CMA_name = ifelse(str_detect(CMA_name, "Mont"), "Montreal (B)",
+                           CMA_name))
+
+service_areas_2016 <- make_library_service_areas(libraries_2016, CMAs_2016)
+
+
+### Import and process CTs_2016 ################################################
+
+CTs_2016 <-
+  get_census(dataset = "CA16", regions = list(C = "Canada"), level = "CT",
+             vectors = c("v_CA16_5618", "v_CA16_4888", "v_CA16_2398", 
+                         "v_CA16_3957"), geo_format = "sf") %>%
+  st_transform(3347) %>%
+  filter(Type == "CT") %>%
+  select(GeoUID, PR_UID, CMA_UID, Population, contains("v_CA")) %>%
+  inner_join(st_drop_geometry(CMAs_2016), by = c("CMA_UID" = "GeoUID")) %>%
+  select(GeoUID, PR_UID, CMA_UID, CMA_name, everything()) %>%
+  set_names(c("Geo_UID", "PR_UID", "CMA_UID", "CMA_name", "population",
+              "unemployed_pct", "housing_need", "med_income", 
+              "visible_minorities", "geometry")) %>%
+  mutate_at(.vars = c("housing_need", "visible_minorities"), 
+            .funs = list(`pct` = ~ {. / population}))
+
+```
+
+**Comparing library service areas with the rest of the city**
+
+We define on-foot library service areas as 1-km "walksheds"—areas within one kilometre (a convenient walking distance) of a library. We then compare the demographics of these areas with the rest of the surrounding urban region. Figure \@ref(fig:fig1) shows, for example, the library walksheds look like in downtown Montreal, overlaid on a map of "core housing need" (a measurement of housing unaffordability and inadequacy).
+```{r fig1, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap = "Distribution of housing need in Montreal. The core housing need is 57% higher within library walkshed than in the rest of the CMA.", fig.align = 'center', fig.width = 6}
+
+tm_shape(st_buffer(
+  filter(libraries_2016, 
+         Library_System == "Bibliotheque et Archives Nationales du Quebec"), 
+  1000), ext = 12) +
+  tm_dots(col = 'black') +
+  tm_shape(filter(CTs_2016, CMA_name == "Montreal (B)")) +
+  tm_polygons("housing_need_pct", border.alpha = 0, 
+              legend.format = list(fun = function(x) {
+                paste0(formatC(x * 100, digits = 0, format = "f"), " %")}),
+              title = "Core housing need") +
+  tm_shape(coastal_water_QC) +
+  tm_fill(col = "skyblue1") +
+  tm_shape(filter(service_areas_2016, CMA_name == "Montreal (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_layout(legend.position = c("left", "top"),
+            legend.bg.color = "grey85",
+            legend.bg.alpha = 0.9,
+            frame = TRUE,
+            fontfamily = "Futura-Medium") +
+  tm_compass()
+```
+
+In fact, the core housing need is 57% higher within library walksheds than in the rest of the Montreal region. (It is 14.4% inside library walksheds, and 9.2% outside.)
+
+This relationship holds up in every other city, as Figure \@ref(fig:fig2) shows. In general, the percentage of families in core housing need is 23.2% within library service areas, and 15.3% outside of them.
+```{r fig2, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap = "Housing need in library walksheds. Housing need is higher in library walksheds in every single city in the country.", fig.align = 'center', fig.width = 6}
+
+library_service_comparison_2006 <- st_intersect_summarize(
+  CTs_2006,
+  service_areas_2006,
+  group_vars = vars(CMA_name, library, PR_UID),
+  population = population,
+  sum_vars = vars(housing_need, visible_minorities),
+  mean_vars = vars(unemployed_pct, med_income)
+) %>%
+  ungroup() %>%
+  mutate(unemployed_pct = unemployed_pct * 0.01) %>%
+  drop_units() %>%
+  mutate(
+    region = case_when(
+      PR_UID == 59 ~ "BC",
+      PR_UID == 48 | PR_UID == 47 | PR_UID == 46 ~ "Prairies",
+      PR_UID == 35 ~ "Ontario",
+      PR_UID == 24 ~ "Quebec",
+      PR_UID == 12 | PR_UID == 13 ~ "Atlantic"
+    )
+  )
+
+library_service_comparison_2016 <-
+  st_intersect_summarize(
+    CTs_2016,
+    service_areas_2016,
+    group_vars = vars(CMA_name, library, PR_UID),
+    population = population,
+    sum_vars = vars(housing_need, visible_minorities),
+    mean_vars = vars(unemployed_pct, med_income)
+  ) %>%
+  ungroup() %>%
+  mutate(unemployed_pct = unemployed_pct * 0.01) %>%
+  drop_units() %>%
+  mutate(
+    region = case_when(
+      PR_UID == 59 ~ "BC",
+      PR_UID == 48 | PR_UID == 47 | PR_UID == 46 ~ "Prairies",
+      PR_UID == 35 ~ "Ontario",
+      PR_UID == 24 ~ "Quebec",
+      PR_UID == 12 | PR_UID == 13 ~ "Atlantic"
+    )
+  )
+
+library_service_comparison <-
+  rbind(
+    library_service_comparison_2006 %>% mutate(date = "2006"),
+    library_service_comparison_2016 %>% mutate(date = "2016")
+  ) %>%
+  drop_units()
+
+
+library_service_comparison %>%
+  filter(date == "2016") %>%
+  ggplot(aes(housing_need, reorder(CMA_name, housing_need))) +
+  geom_line(aes(group = interaction(CMA_name, PR_UID)), colour = "grey80") +
+  geom_point(aes(color = library)) +
+  scale_x_continuous(labels = scales::percent) +
+  theme_minimal() +
+  labs(color = "Library service area") +
+  theme(
+    axis.title.y = element_blank(),
+    axis.title.x = element_blank(),
+    legend.position = "bottom",
+    text = element_text(family = "Futura-Medium")
+  )
+```
+
+**Urban demographics over time**
+
+Comparing census data from 2006 and 2016, we found that these patterns of greater social need in library walksheds are not new; social disparities between library service areas and the rest of their city-regions are relatively large and mostly growing (Figure \@ref(fig:fig3)).
+```{r fig3, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap = "Change in demographic variables from 2006 to 2016. Gaps in housing need and median income widened, while gaps in unemployment rate and visible minority rate narrowed.", fig.align = 'center', fig.width = 6}
+
+### Create tidy_summary ########################################################
+
+## Summaries by weighted mean (population)
+
+summary_2016_weighted <-
+  library_service_comparison_2016 %>%
+  st_drop_geometry() %>%
+  group_by(library) %>%
+  summarize_at(
+    c(
+      "housing_need",
+      "visible_minorities",
+      "unemployed_pct",
+      "med_income"
+    ),
+    ~ {
+      sum(. * population, na.rm = TRUE) /
+        sum(population, na.rm = TRUE)
+    }
+  )
+
+summary_2006_weighted <-
+  library_service_comparison_2006 %>%
+  st_drop_geometry() %>%
+  group_by(library) %>%
+  summarize_at(
+    c(
+      "housing_need",
+      "visible_minorities",
+      "unemployed_pct",
+      "med_income"
+    ),
+    ~ {
+      sum(. * population, na.rm = TRUE) /
+        sum(population, na.rm = TRUE)
+    }
+  )
+
+
+## Tidying summary data
+
+library_service_comparison_tidy <-
+  gather(
+    library_service_comparison,
+    housing_need,
+    visible_minorities,
+    unemployed_pct,
+    med_income,
+    key = "census_variable",
+    value = "value"
+  ) %>%
+  drop_units()
+
+tidy_summary <-
+  rbind(
+    {
+      gather(summary_2006_weighted, housing_need, visible_minorities,
+             unemployed_pct, med_income, key = "census_variable", 
+             value = "value") %>% 
+        mutate(date = "2006") %>% 
+        drop_units()
+      },
+    {
+      gather(summary_2016_weighted, housing_need, visible_minorities,
+             unemployed_pct, med_income, key = "census_variable",
+             value = "value") %>% 
+        mutate(date = "2016") %>%
+        drop_units()
+      })
+
+
+ggplot(tidy_summary) +
+  geom_line(
+    data = filter(library_service_comparison_tidy, value < 100000),
+    aes(
+      x = date,
+      y = value,
+      colour = library,
+      group = interaction(library, CMA_name)
+    ),
+    alpha = 0.2
+  ) +
+  geom_point(
+    data = filter(library_service_comparison_tidy, value < 100000),
+    aes(x = date, y = value, colour = library),
+    alpha = 0.2
+  ) +
+  geom_point(aes(x = date, y = value, colour = library), size = 5) +
+  geom_line(aes(
+    x = date,
+    y = value,
+    colour = library,
+    group = library
+  ),
+  size = 2) +
+  facet_wrap( ~ census_variable, scales = "free") +
+  labs(color = "Library service area") +
+  theme(
+    axis.title.y = element_blank(),
+    axis.title.x = element_blank(),
+    legend.position = "bottom",
+    text = element_text(family = "Futura-Medium")
+  )
+```
+
+However, despite a general trend toward disparities growing between library service areas and the rest of the city, there is substantial regional variation across the country. Figure \@ref(fig:fig4) ranks city-regions by the average amount of change in housing need between 2006 and 2016, and demonstrates that, while many cities have seen housing need increase and the gap between library service areas and the rest of the city widen, a number of cities run counter to each of these trends.
+```{r fig4, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap="Variation in housing need change from 2006 to 2016. While most cities have seen the housing need gap between library service areas and the rest of the city widen, some cities have defied this trend.", fig.align = 'center', fig.width = 6}
+
+lib_true_2006 <- library_service_comparison_2006 %>%
+  mutate (CMA_lib = if_else(library==TRUE, "T", "F"),
+          CMA_lib2 = paste(as.character(CMA_name), as.character(CMA_lib), sep = '_'))
+
+lib_true_2016 <- library_service_comparison_2016 %>%
+  mutate (CMA_lib = if_else(library == TRUE, "T", "F"),
+          CMA_lib2 = paste(as.character(CMA_name), as.character(CMA_lib), sep = '_'))
+
+## Join 2006 and 2016 by CMA_NAME and Library service area (true/false)
+lib_change <- lib_true_2016 %>%
+  inner_join(st_drop_geometry(lib_true_2006),
+             by = c("CMA_lib2", "library", "PR_UID"))
+
+rm(lib_true_2006, lib_true_2016)
+
+## Calculate change in variables
+lib_change <- lib_change %>%
+  mutate(
+    housing_need_ch = housing_need.x - housing_need.y,
+    med_income_ch = med_income.x - med_income.y,
+    visible_minorities_ch = visible_minorities.x - visible_minorities.y,
+    unemployed_pct_change = unemployed_pct.x - unemployed_pct.y
+  ) %>%
+  st_drop_geometry() %>%
+  distinct(population.x, housing_need.x, .keep_all = TRUE) %>%
+  filter(region.x == region.y)
+
+
+lib_change %>%
+  ggplot(aes(housing_need_ch, reorder(CMA_name.x, housing_need_ch))) +
+  geom_line(aes(group = interaction(CMA_name.x, PR_UID)), colour = "grey80") +
+  geom_point(aes(color = library)) +
+  scale_x_continuous(labels = scales::percent) +
+  theme_minimal() +
+  labs(color = "Library service area") +
+  theme(
+    axis.title.y = element_blank(),
+    axis.title.x = element_blank(),
+    legend.position = "bottom",
+    text = element_text(family = "Futura-Medium")
+  )
+```
+
+Figure \@ref(fig:fig5) presents the same data, but grouped by region. The differences between areas of the country are striking; while most cities in Ontario have seen their core housing need increase, the opposite is true in BC, while Atlantic Canada has seen little change and cities in the Prairies are strongly divergent.
+```{r fig5, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap = "Variation in housing need change from 2006 to 2016, grouped by region. Ontario has worsened, BC has improved, and the Prairies are strongly divergent.", fig.align = 'center', fig.width = 6}
+library(ggrepel)
+
+lib_change %>%
+  ggplot(aes(reorder(CMA_name.x, housing_need_ch), housing_need_ch)) +
+  geom_line(aes(group = interaction(CMA_name.x, PR_UID)), colour = "grey80") +
+  geom_point(mapping = aes(color = library)) +
+  geom_text_repel(
+    data = filter(lib_change, library == TRUE),
+    aes(label = CMA_name.x),
+    size = 1.5
+  ) +
+  labs(color = "Library service area") +
+  theme_minimal() +
+  theme(
+    axis.title.y = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    legend.position = "bottom",
+    text = element_text(family = "Futura-Medium")
+  ) +
+  scale_y_continuous(labels = scales::percent) +
+  facet_wrap( ~ region.y)
+```
+
+Changing patterns of urban development have shifted—and will continue to shift—libraries’ local contexts and roles. With growing social need in library walk-sheds, libraries are becoming increasingly important spaces for community services, moving away from the traditional mission of public libraries. However, evidence suggests that while municipal officials are supportive of libraries, they do not fully understand the range of services that they may provide; stagnating or declining higher-level funding is thus a serious threat. 
+
+
+**Examples from across Canada**
+```{r fig6, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap="Demographic variables in Montreal (library service area), 2016",  fig.align='center', fig.width = 7.5, fig.height = 7.5}
+
+
+tm_shape(filter(service_areas_2016, CMA_name == "Montreal (B)" &
+                  library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_shape(filter(CTs_2016, CMA_name == "Montreal (B)")) +
+  tm_polygons(
+    c(
+      "unemployed_pct",
+      "med_income",
+      "housing_need_pct",
+      "visible_minorities_pct"
+    ),
+    title = c(
+      "Unemployment",
+      "Median income",
+      "Housing need",
+      "Visible minorities"
+    ),
+    border.alpha = 0
+  )  +
+  # tm_shape(water_QC) +
+  # tm_fill(col = "skyblue1") +
+  tm_shape(coastal_water_QC) +
+  tm_fill(col = "skyblue1") +
+  tm_facets(sync = TRUE, ncol = 2) +
+  tm_shape(filter(service_areas_2016, CMA_name == "Montreal (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_layout(
+    legend.position = c("left", "top"),
+    frame = FALSE,
+    fontfamily = "Futura-Medium",
+    legend.text.size = 0.5,
+    legend.title.size = 0.9
+  )
+```
+```{r fig7, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap="Demographic variables in Montreal (region), 2016",  fig.align='center', fig.width = 7.5, fig.height = 7.5}
+  tm_shape(filter(CMAs_2016, CMA_name == "Montreal (B)")) +
+  tm_dots(col = 'black') +
+  tm_shape(filter(service_areas_2016, CMA_name == "Montreal (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_shape(filter(CTs_2016, CMA_name == "Montreal (B)")) +
+  tm_polygons(
+    c(
+      "unemployed_pct",
+      "med_income",
+      "housing_need_pct",
+      "visible_minorities_pct"
+    ),
+    title = c(
+      "Unemployment",
+      "Median income",
+      "Housing need",
+      "Visible minorities"
+    ),
+    border.alpha = 0
+  )  +
+  tm_shape(water_QC) +
+  tm_fill(col = "skyblue1") +
+  tm_shape(coastal_water_QC) +
+  tm_fill(col = "skyblue1") +
+  tm_facets(sync = TRUE, ncol = 2) +
+  tm_shape(filter(service_areas_2016, CMA_name == "Montreal (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_layout(
+    legend.position = c("left", "top"),
+    frame = FALSE,
+    fontfamily = "Futura-Medium",
+    legend.text.size = 0.5,
+    legend.title.size = 0.9
+  )
+```
+```{r fig8, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap = "Demographic variables in Toronto (library service area), 2016",  fig.align = 'center', fig.width = 7.5, fig.height = 9.4}
+
+
+tm_shape(filter(service_areas_2016, CMA_name == "Toronto (B)" &
+                  library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_shape(filter(CTs_2016, CMA_name == "Toronto (B)")) +
+  tm_polygons(
+    c(
+      "unemployed_pct",
+      "med_income",
+      "housing_need_pct",
+      "visible_minorities_pct"
+    ),
+    title = c(
+      "Unemployment",
+      "Median income",
+      "Housing need",
+      "Visible minorities"
+    ),
+    border.alpha = 0
+  )  +
+  # tm_shape(water_ON) +
+  # tm_fill(col = "skyblue1") +
+  tm_shape(coastal_water_ON) +
+  tm_fill(col = "skyblue1") +
+  tm_facets(sync = TRUE, ncol = 2) +
+  tm_shape(filter(service_areas_2016, CMA_name == "Toronto (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_layout(
+    legend.position = c("left", "top"),
+    frame = FALSE,
+    fontfamily = "Futura-Medium",
+    legend.text.size = 0.5,
+    legend.title.size = 0.9
+  )
+```
+```{r fig9, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap = "Demographic variables in Toronto (region), 2016",  fig.align = 'center', fig.width = 7.5, fig.height = 9.4}
+tm_shape(filter(CMAs_2016, CMA_name == "Toronto (B)")) +
+  tm_dots(col = 'black') +
+  tm_shape(filter(service_areas_2016, CMA_name == "Toronto (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_shape(filter(CTs_2016, CMA_name == "Toronto (B)")) +
+  tm_polygons(
+    c(
+      "unemployed_pct",
+      "med_income",
+      "housing_need_pct",
+      "visible_minorities_pct"
+    ),
+    title = c(
+      "Unemployment",
+      "Median income",
+      "Housing need",
+      "Visible minorities"
+    ),
+    border.alpha = 0
+  )  +
+  tm_shape(water_ON) +
+  tm_fill(col = "skyblue1") +
+  tm_shape(coastal_water_ON) +
+  tm_fill(col = "skyblue1") +
+  tm_facets(sync = TRUE, ncol = 2) +
+  tm_shape(filter(service_areas_2016, CMA_name == "Toronto (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_layout(
+    legend.position = c("left", "top"),
+    frame = FALSE,
+    fontfamily = "Futura-Medium",
+    legend.text.size = 0.5,
+    legend.title.size = 0.9
+  )
+```
+
+```{r fig10, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap = "Demographic variables in Vancouver (library service area), 2016", fig.align = 'center', fig.width = 7.5, fig.height = 8}
+
+
+tm_shape(filter(service_areas_2016, CMA_name == "Vancouver (B)" &
+                  library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_shape(filter(CTs_2016, CMA_name == "Vancouver (B)")) +
+  tm_polygons(
+    c(
+      "unemployed_pct",
+      "med_income",
+      "housing_need_pct",
+      "visible_minorities_pct"
+    ),
+    title = c(
+      "Unemployment",
+      "Median income",
+      "Housing need",
+      "Visible minorities"
+    ),
+    border.alpha = 0
+  )  +
+  tm_shape(water_BC) +
+  tm_fill(col = "skyblue1") +
+  tm_shape(coastal_water_BC) +
+  tm_fill(col = "skyblue1") +
+  tm_facets(sync = TRUE, ncol = 2) +
+  tm_shape(filter(service_areas_2016, CMA_name == "Vancouver (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_layout(
+    legend.position = c("left", "top"),
+    frame = FALSE,
+    fontfamily = "Futura-Medium",
+    legend.text.size = 0.5,
+    legend.title.size = 0.9
+  )
+```
+```{r fig11, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap = "Demographic variables in Vancouver (region), 2016", fig.align = 'center', fig.width = 7.5, fig.height = 9.4}
+tm_shape(filter(CMAs_2016, CMA_name == "Vancouver (B)")) +
+  tm_dots(col = 'black') +
+  tm_shape(filter(service_areas_2016, CMA_name == "Vancouver (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_shape(filter(CTs_2016, CMA_name == "Vancouver (B)")) +
+  tm_polygons(
+    c(
+      "unemployed_pct",
+      "med_income",
+      "housing_need_pct",
+      "visible_minorities_pct"
+    ),
+    title = c(
+      "Unemployment",
+      "Median income",
+      "Housing need",
+      "Visible minorities"
+    ),
+    border.alpha = 0
+  )  +
+  tm_shape(water_BC) +
+  tm_fill(col = "skyblue1") +
+  tm_shape(coastal_water_BC) +
+  tm_fill(col = "skyblue1") +
+  tm_facets(sync = TRUE, ncol = 2) +
+  tm_shape(filter(service_areas_2016, CMA_name == "Vancouver (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_layout(
+    legend.position = c("left", "top"),
+    frame = FALSE,
+    fontfamily = "Futura-Medium",
+    legend.text.size = 0.5,
+    legend.title.size = 0.9
+  )
+```
+```{r fig12, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap = "Demographic variables in Calgary (library service area), 2016", fig.align = 'center', fig.width = 7.5, fig.height = 10}
+tm_shape(filter(service_areas_2016, CMA_name == "Calgary (B)" &
+                  library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_shape(filter(CTs_2016, CMA_name == "Calgary (B)")) +
+  tm_polygons(
+    c(
+      "unemployed_pct",
+      "med_income",
+      "housing_need_pct",
+      "visible_minorities_pct"
+    ),
+    title = c(
+      "Unemployment",
+      "Median income",
+      "Housing need",
+      "Visible minorities"
+    ),
+    border.alpha = 0
+  )  +
+  tm_shape(water_AB) +
+  tm_fill(col = "skyblue1") +
+  tm_facets(sync = TRUE, ncol = 2) +
+  tm_shape(filter(service_areas_2016, CMA_name == "Calgary (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_layout(
+    legend.position = c("left", "top"),
+    frame = FALSE,
+    fontfamily = "Futura-Medium",
+    legend.text.size = 0.5,
+    legend.title.size = 0.9
+  )
+```
+```{r fig13, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.cap = "Demographic variables in Calgary (region), 2016", fig.align = 'center', fig.width = 7.5, fig.height = 7.5}
+tm_shape(filter(CMAs_2016, CMA_name == "Calgary (B)")) +
+  tm_dots(col = 'black') +
+  tm_shape(filter(service_areas_2016, CMA_name == "Calgary (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_shape(filter(CTs_2016, CMA_name == "Calgary (B)")) +
+  tm_polygons(
+    c(
+      "unemployed_pct",
+      "med_income",
+      "housing_need_pct",
+      "visible_minorities_pct"
+    ),
+    title = c(
+      "Unemployment",
+      "Median income",
+      "Housing need",
+      "Visible minorities"
+    ),
+    border.alpha = 0
+  )  +
+  tm_shape(water_AB) +
+  tm_fill(col = "skyblue1") +
+  tm_facets(sync = TRUE, ncol = 2) +
+  tm_shape(filter(service_areas_2016, CMA_name == "Calgary (B)" &
+                    library == TRUE)) +
+  tm_borders(col = 'black') +
+  tm_layout(
+    legend.position = c("left", "top"),
+    frame = FALSE,
+    fontfamily = "Futura-Medium",
+    legend.text.size = 0.5,
+    legend.title.size = 0.9
+  )
+```
+<style>
+p.caption {
+  font-size: 0.8em;
+  font-style: italic;
+}
+</style>
+

@@ -1,0 +1,28 @@
+---
+title: 'Short-term rentals, short-term thinking: Paper published in Canadian Dimension'
+date: '2017-12-12'
+slug: short-term-rentals-short-term-thinking-paper
+categories: []
+tags:
+  - Publication
+  - Short-term rentals
+  - Montréal
+  - Toronto
+  - Vancouver
+subtitle: ''
+summary: "Open access publication of a dsicussion of short-term rentals' impacts on housing in major Canadian cities"
+authors:
+  - Danielle Kerrigan
+lastmod: '2017-12-12T17:15:06-04:00'
+featured: no
+image:
+  caption: 'Credit: London street artist, SubDude'
+  focal_point: 'smart'
+  preview_only: no
+projects:
+  - short-term-rentals
+---
+
+What is the future of short-term rentals, and what can cities do to benefit from ‘home-sharing’ while avoiding a proliferation of Airbnb hotels? In [Short-term rentals, short-term thinking](https://canadiandimension.com/articles/view/airbnb-short-term-rentals-short-term-thinking), which has just been released in *[Canadian Dimension](ttps://canadiandimension.com/)*, we summarize the impact of STRs on major Canadian cities, and argue that new STR regulations are necessary and that platforms need to have responsibility for enforcement.
+
+Relying on the same data as our previous report, [Short-term cities](http://upgo.lab.mcgill.ca/airbnb), this article points out the positive influence home-sharing can have on cities, but how far from the case this seems to be in Canada’s three largest cities. Ultimately, STRs in their current form are likely contributing to a substantial loss of housing, the majority of the benefits are being reaped by a small number of hosts, and new regulations are needed.

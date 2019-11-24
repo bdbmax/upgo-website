@@ -1,0 +1,47 @@
+Library System,Municipality,,Filetype,URL
+Barrie Public Library,Barrie,,CSV,http://public-barrie.opendata.arcgis.com/search?collection=Dataset&page=2
+Bibliothèque de Montréal,Montreal,,CSV,http://donnees.ville.montreal.qc.ca/dataset/lieux-culturels
+Bibliothèque et Archives nationales du Québec,Montreal,,CSV,http://donnees.ville.montreal.qc.ca/dataset/lieux-culturels
+Bibliothèque municipale de Gatineau,Gatineau,,CSV,http://gatineau.ca/donneesouvertes/fiche_metadonnees_en.aspx?id=-1964483076
+Bibliothèque Ville de Laval,Laval,,CSV,https://www.donneesquebec.ca/recherche/fr/dataset/lieux-et-edifices-municipaux
+Brampton Library,Brampton,,CSV,http://geohub.brampton.ca/datasets/libraries/data
+Burlington Public Library,Burlington,,CSV,https://navburl-burlington.opendata.arcgis.com/datasets/libraries/data
+Burnaby Public Library,Burnaby,,CSV,http://data.burnaby.ca/datasets/4e99b5545f59441ea9a0cfcfaf656e1a_1
+Calgary Public Library,Calgary,,CSV,https://data.calgary.ca/Recreation-and-Culture/Calgary-Public-Library-Locations-and-Hours/m9y7-ui7j
+Coquitlam Public Library,Coquitlam,,CSV,https://catalogue.data.gov.bc.ca/dataset/bc-public-libraries-systems-branches-and-locations-2017
+Edmonton Public Library,Edmonton,,CSV,https://data.edmonton.ca/Community-Centres/Public-Libraries/jn25-zspi
+Fraser Valley Regional Library,Fraser Valley,,CSV,https://catalogue.data.gov.bc.ca/dataset/bc-public-libraries-systems-branches-and-locations-2017
+Greater Victoria Public Library,Victoria,,CSV,https://catalogue.data.gov.bc.ca/dataset/bc-public-libraries-systems-branches-and-locations-2017
+Guelph Public Library,Guelph,,lat long ,https://docs.google.com/spreadsheets/d/1uiKtqy9Q0gOm9P9cZM5b4EmbjM1DNaAeTOk4oivZ5iE/edit#gid=0
+Hamilton Public Library,Hamilton,,CSV,http://open.hamilton.ca/datasets/67a54ea25d944cf7b66750ba57da822c_1
+Idea Exchange,Cambridge,,CSV,https://rowopendata-rmw.opendata.arcgis.com/datasets/d137da7d38c14b3aa0fd42ab3a4cebad_0
+Kingston Frontenac Public Library,Kingston,,CSV,https://opendatakingston.cityofkingston.ca/explore/dataset/point-of-interest/export/?disjunctive.description&disjunctive.name
+Kitchener Public Library,Kitchener,,CSV,https://rowopendata-rmw.opendata.arcgis.com/datasets/d137da7d38c14b3aa0fd42ab3a4cebad_0
+London Public Library,London,,lat long ,https://docs.google.com/spreadsheets/d/1-RGMNSJb9oUTTzsbOXfgW3Zpn8Atu0s0M0p9sWoTnnI/edit?usp=sharing
+Markham Public Library,Markham,,CSV,http://data-markham.opendata.arcgis.com/datasets/city-owned-facilities
+Milton Public Library,Milton,,SHP,https://www.milton.ca/en/townhall/opendata.asp
+Mississauga Library System,Mississauga,,CSV ,http://data.mississauga.ca/datasets/city-libraries
+New Brunswick Public Library Service,New Brunswick,,lat long ,https://docs.google.com/spreadsheets/d/1STjvc0kSbOzrHWUOlKLuwBfA45MckdFPVPYth4STmHU/edit?usp=sharing
+Oakville Public Library,Oakville,,CSV ,https://portal-exploreoakville.opendata.arcgis.com/datasets/community-and-social-services-list-
+Okanagan Regional Library,Okanagan,,CSV,https://catalogue.data.gov.bc.ca/dataset/bc-public-libraries-systems-branches-and-locations-2017
+Oshawa Public Libraries,Oshawa,,CSV,https://city-oshawa.opendata.arcgis.com/datasets/oshawa-culture-locations?geometry=-79.034%2C43.873%2C-78.614%2C43.96
+Ottawa Public Library,Ottawa,,XML - CSV in project,http://data.ottawa.ca/dataset/library-locations-and-hours-ottawa-public-libraries/resource/c9bc184c-ac3b-493d-81eb-9df0c37fbaee
+Pickering Public Library,Pickering,,CSV,http://opendata.pickering.ca/datasets/3b0c4830a24640c786e31241451fb466_2
+Red Deer Public Library,Red Deer,,lat long ,https://docs.google.com/spreadsheets/d/1DDT2EbU0vJ3dC5b90SvZp7zCcVHjZpOEfKYnGjECTuE/edit?usp=sharing
+Regina Public Library,Regina,,lat long ,https://docs.google.com/spreadsheets/d/1DDT2EbU0vJ3dC5b90SvZp7zCcVHjZpOEfKYnGjECTuE/edit?usp=sharing
+Richmond Hill Public Library,Richmond Hill,,lat long ,https://docs.google.com/spreadsheets/d/1DDT2EbU0vJ3dC5b90SvZp7zCcVHjZpOEfKYnGjECTuE/edit?usp=sharing
+Richmond Public Library,Richmond,,CSV,https://catalogue.data.gov.bc.ca/dataset/bc-public-libraries-systems-branches-and-locations-2017
+Saskatoon Public Library,Saskatoon,,n/a,https://docs.google.com/spreadsheets/d/1mDsiWkAPcuQrn3K24JpGXgIKN9sxF3qiKlSarK0n4Ng/edit?usp=sharing
+St. Catharines Public Library,St Cats,,csv,https://niagaraopendata.ca/dataset/libraries
+Surrey Libraries,Surrey,,CSV,https://data.surrey.ca/dataset/places-of-interest
+Surrey Libraries,Surrey,,CSV,https://catalogue.data.gov.bc.ca/dataset/bc-public-libraries-systems-branches-and-locations-2017
+Thunder Bay Public Library,Thunder Bay,,lat long ,https://docs.google.com/spreadsheets/d/1DDT2EbU0vJ3dC5b90SvZp7zCcVHjZpOEfKYnGjECTuE/edit?usp=sharing
+Toronto Public Library,Toronto,,XML,https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#cfb82031-2489-1422-617f-b87a5cf645f3
+Vancouver Island Regional Library,Vancouver Island,,CSV,https://catalogue.data.gov.bc.ca/dataset/bc-public-libraries-systems-branches-and-locations-2017
+Vancouver Public Library,Vancouver,,CSV,https://data.vancouver.ca/datacatalogue/index.htm#l
+Vancouver Public Library,Vancouver,,CSV,https://catalogue.data.gov.bc.ca/dataset/bc-public-libraries-systems-branches-and-locations-2017
+Vaughan Public Libraries,Vaughan,,lat long ,https://docs.google.com/spreadsheets/d/1DDT2EbU0vJ3dC5b90SvZp7zCcVHjZpOEfKYnGjECTuE/edit?usp=sharing
+Waterloo Public Library,Waterloo,,CSV,https://rowopendata-rmw.opendata.arcgis.com/datasets/d137da7d38c14b3aa0fd42ab3a4cebad_0
+Windsor Public Library,Windsor,,CSV,https://opendata.citywindsor.ca/opendata/details/205
+Winnipeg Public Library,Winnipeg,,CSV,https://data.winnipeg.ca/browse?q=library&sortBy=relevance
+Wood Buffalo Regional Library,Fort McMurray/Wood Buffalo Region,,lat long ,https://docs.google.com/spreadsheets/d/1DDT2EbU0vJ3dC5b90SvZp7zCcVHjZpOEfKYnGjECTuE/edit?usp=sharing

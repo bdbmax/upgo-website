@@ -1,0 +1,27 @@
+---
+title: Wachsmuth featured on CTV News discussing Québec's new short-term rental regulations
+date: '2019-06-08'
+slug: wachsmuth-featured-on-ctv-news
+categories: []
+tags:
+  - Media
+  - Short-term rentals
+  - Montréal
+subtitle: ''
+summary: "Insights into Québec's new rules, plus an off-camera toddler contribution"
+authors:
+  - David Wachsmuth
+lastmod: '2019-06-10T17:15:06-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: 'bottom'
+  preview_only: no
+projects:
+  - short-term-rentals
+---
+The Province of Québec recently announced [sweeping new changes to short-term rental regulations](https://montrealgazette.com/news/local-news/city-of-montreal-renters-advocates-applaud-new-airbnb-rules). The centrepiece is the requirement that *all* short-term rental hosts must register with the Province and display their registration number publicly on their Airbnb or other platform listing. There will be two classes of permit (one for hosts renting their primary residence and one for hosts renting a property they don't live in), and much more scrutiny of hosts who are not sharing their own homes.
+
+In general I think the new regulations are a big step forward for the Province; UPGo has been monitoring compliance with the existing regulations (which feature a permit under specific, hard-to-establish cases), and our assessment is that illegal Airbnb listings are rampant. By making registration mandatory, and separating home sharers from commercial operators, the new rules should allow enforcement to be targeted at the truly problematic hosts, while making the entire system clearer for everyone. If the Province puts in enough enforcement effort, we could see thousands of apartments return to the long-term rental market in Montréal and Québec City.
+
+I've done several media interviews discussing these regulations in the last few days, and I wanted to highlight one on CTV: [Airbnb free-for-all should come to an end](https://montreal.ctvnews.ca/video?clipId=1703213). This is because, if you listen closely, you'll hear my toddler babbling away. She was actually in a stroller right below the camera when the interview was shot--it was a beautiful Saturday afternoon and we were at the playground!

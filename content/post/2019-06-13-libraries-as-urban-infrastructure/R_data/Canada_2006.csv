@@ -1,0 +1,14 @@
+2006 Profile of Census - Canada, provinces, territories / Income and earnings and housing and shelter costs
+
+"COL0","Province code"
+"COL1","Province name"
+"COL2","Median after-tax household income $"
+"COL3","Median after-tax household income $"
+"COL4","Total number of non-farm, non-reserve private dwellings occupied by usual residents - 20% sample data / Tenant-occupied households spending 30% or more of household income on gross rent"
+"COL5","Total number of non-farm, non-reserve private dwellings occupied by usual residents - 20% sample data / Owner households spending 30% or more of household income on owner's major payments"
+
+"COL0","COL1","COL2","COL3","COL4","COL5"
+
+01,"CANADA",46584.00,23888.00,1546980.00,1491265.00
+
+

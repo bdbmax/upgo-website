@@ -1,0 +1,27 @@
+---
+title: '"Airbnb and the rent gap" paper shortlisted for planning award'
+date: '2019-08-07'
+type: "post"
+slug: airbnb-rent-gap-award-shortlist
+categories: []
+tags:
+  - Publication
+  - Short-term rentals
+  - New York City
+subtitle: ''
+summary: "Wachsmuth and Weisler paper a finalist for AESOP prize, and now open access"
+authors:
+  - admin
+lastmod: '2019-08-07T17:15:06-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: 'smart'
+  preview_only: no
+projects:
+  - short-term-rentals
+---
+
+I'm pleased to announce that my paper with Alexander Weisler, [Airbnb and the rent gap: Gentrification through the sharing economy](/publication/airbnb-and-the-rent-gap), was one of five finalists for the 2019 AESOP Best Published Paper Award. This award is given annually by the Association of European Schools of Planning, and this year it was given to Agger, A. & Sørensen, E. (2018). Managing collaborative innovation in public bureaucracies. Planning Theory 17(1) 53- 73. Complete details about the award and the other shortlisted papers are available on [AESOP's website](http://www.aesop-planning.eu/news/en_GB/2019/07/22/readabout/aesop-best-published-paper-award-2019).
+
+Our paper has been made open access by *Environment and Planning A*, so it is currently freely available for reading and downloading at the [journal's website](https://journals.sagepub.com/doi/full/10.1177/0308518X18778038). And in fact, the paper is currently the [journal's second most widely read](https://journals.sagepub.com/action/showMostReadArticles?journalCode=epna), and is nipping at the heels of number one!
