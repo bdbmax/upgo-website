@@ -15,9 +15,8 @@ authors:
 lastmod: '2019-11-20T07:00:06-04:00'
 featured: yes
 image:
-  caption: ''
-  focal_point: 'smart'
-  preview_only: no
+  placement: 2
+  caption: 'Credit: dconvertini'
 projects:
   - short-term-rentals
 ---

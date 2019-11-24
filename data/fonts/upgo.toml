@@ -1,0 +1,11 @@
+# Font style metadata
+name = "UPGo"
+
+# Optional Google font URL
+google_fonts = "Nunito"
+
+# Font families
+heading_font = "Futura Bold"
+body_font = "Futura Medium"
+nav_font = "Futura Condensed ExtraBold"
+mono_font = "Roboto Mono"

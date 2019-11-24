@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Futura Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Futura Medium'), local('Futura-Medium'), url('fonts/futura-medium.ttf');
+}
+
+@font-face {
+  font-family: 'Futura Medium';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Futura Medium Italic'), local('Futura-MediumItalic'), url('fonts/futura-italic.ttf');
+}
+
+@font-face {
+  font-family: 'Futura Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Futura Bold'), local('Futura-Bold'), url('fonts/futura-bold.ttf');
+}
+
+@font-face {
+  font-family: 'Futura Condensed ExtraBold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Futura Condensed ExtraBold'), local('Futura-CondensedExtraBold'), url('fonts/futura-condensed-extra-bold.ttf');
+}
