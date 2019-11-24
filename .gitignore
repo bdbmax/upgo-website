@@ -5,3 +5,4 @@
 /public
 /blogdown
 *.Rproj
+.DS_Store
