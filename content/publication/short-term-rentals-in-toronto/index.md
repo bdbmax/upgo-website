@@ -7,7 +7,7 @@ authors:
 - danielle-kerrigan
 date: "2019-08-22T00:00:00Z"
 doi: ""
-featured: true
+featured: false
 image:
   caption: ''
   focal_point: "smart"
