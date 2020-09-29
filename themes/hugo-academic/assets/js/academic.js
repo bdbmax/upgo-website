@@ -385,14 +385,13 @@
    * --------------------------------------------------------------------------- */
 
   $(document).ready(function() {
-    // Fix Hugo's auto-generated Table of Contents.
-    //   Must be performed prior to initializing ScrollSpy.
-    $('#TableOfContents > ul > li > ul').unwrap().unwrap();
+    // Fix Goldmark table of contents.
+    // - Must be performed prior to initializing ScrollSpy.
     $('#TableOfContents').addClass('nav flex-column');
     $('#TableOfContents li').addClass('nav-item');
     $('#TableOfContents li a').addClass('nav-link');
 
-    // Fix Mmark task lists (remove bullet points).
+    // Fix Goldmark task lists (remove bullet points).
     $("input[type='checkbox'][disabled]").parents('ul').addClass('task-list');
 
     // Fix Mermaid.js clash with Highlight.js.
@@ -463,9 +462,11 @@
     // Live update of day/night mode on system preferences update (no refresh required).
     const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     darkModeMediaQuery.addListener((e) => {
-      const darkModeOn = e.matches;
-      console.log(`Dark mode is ${darkModeOn ? '🌒 on' : '☀️ off'}.`);
-      toggleDarkMode(codeHlEnabled, codeHlLight, codeHlDark, diagramEnabled);
+      if ($('.js-dark-toggle').length) {
+        const darkModeOn = e.matches;
+        console.log(`Dark mode is ${darkModeOn ? '🌒 on' : '☀️ off'}.`);
+        toggleDarkMode(codeHlEnabled, codeHlLight, codeHlDark, diagramEnabled);
+      }
     });
   });
 
@@ -474,29 +475,6 @@
    * --------------------------------------------------------------------------- */
 
   $(window).on('load', function() {
-    // Re-initialize Scrollspy with dynamic navbar height offset.
-    fixScrollspy();
-
-    if (window.location.hash) {
-      // When accessing homepage from another page and `#top` hash is set, show top of page (no hash).
-      if (window.location.hash == "#top") {
-        window.location.hash = ""
-      } else if (!$('.projects-container').length) {
-        // If URL contains a hash and there are no dynamically loaded images on the page,
-        // immediately scroll to target ID taking into account responsive offset.
-        // Otherwise, wait for `imagesLoaded()` to complete before scrolling to hash to prevent scrolling to wrong
-        // location.
-        scrollToAnchor();
-      }
-    }
-
-    // Call `fixScrollspy` when window is resized.
-    let resizeTimer;
-    $(window).resize(function() {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(fixScrollspy, 200);
-    });
-
     // Filter projects.
     $('.projects-container').each(function(index, container) {
       let $container = $(container);
@@ -630,6 +608,29 @@
       dropdown[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
       menu[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
     }, 300);
+
+    // Re-initialize Scrollspy with dynamic navbar height offset.
+    fixScrollspy();
+
+    if (window.location.hash) {
+      // When accessing homepage from another page and `#top` hash is set, show top of page (no hash).
+      if (window.location.hash == "#top") {
+        window.location.hash = ""
+      } else if (!$('.projects-container').length) {
+        // If URL contains a hash and there are no dynamically loaded images on the page,
+        // immediately scroll to target ID taking into account responsive offset.
+        // Otherwise, wait for `imagesLoaded()` to complete before scrolling to hash to prevent scrolling to wrong
+        // location.
+        scrollToAnchor();
+      }
+    }
+
+    // Call `fixScrollspy` when window is resized.
+    let resizeTimer;
+    $(window).resize(function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(fixScrollspy, 200);
+    });
   });
 
 })(jQuery);
