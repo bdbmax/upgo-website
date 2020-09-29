@@ -46,5 +46,5 @@ hero_media = "UPGo_logo.png"
 
 # **The Urban Politics and Governance research group at McGill University**
 
-UPGo, the Urban Politics and Governance research group at McGill, addresses pressing urban governance problems--particularly those that exceed or challenge city boundaries--with rigorous and publicly-oriented research. Our three research themes are 1) local and regional economic development; 2) urban sustainability; 3) housing policy. UPGo is led by Prof. David Wachsmuth of the School of Urban Planning.
+UPGo, the Urban Politics and Governance research group at McGill, addresses pressing urban governance problems with rigorous and publicly-oriented research. Our research themes are 1) local and regional economic development; 2) urban sustainability; 3) housing policy. UPGo is led by Prof. David Wachsmuth of the School of Urban Planning.
 

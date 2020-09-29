@@ -46,9 +46,6 @@ org_name = "Urban Politics and Governance research group"
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
 description = "The Urban Politics and Governance research group at McGill University"
 
-# Display a logo in navigation bar rather than title (optional).
-#   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
-logo = "UPGo_logo.png"
 
 ############################
 ## Site Features
