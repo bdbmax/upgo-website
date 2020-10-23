@@ -1,7 +1,7 @@
 ---
 authors:
 - danielle-kerrigan
-bio: "My research interests include affordable housing models, social relations in the housing sector and the impact of short-term rentals on housing markets."
+bio: "My research interests include social relations in the housing sector and the impact of short-term rentals on housing markets."
 education:
   courses:
   - course: PhD in Urban Planning
@@ -18,7 +18,6 @@ education:
     year: 2010
 email: "danielle.kerrigan@mail.mcgill.ca"
 interests:
-- Affordable housing models
 - Social relations in the housing sector
 - Short-term rentals and the platform economy
 name: Danielle Kerrigan

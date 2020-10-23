@@ -6,8 +6,8 @@ education:
   courses:
   - course: Master of Urban Planning
     institution: McGill University
-    year: 2020 (expected)
-  - course: Bachelor in Engineering
+    year: 2020
+  - course: BEng in Chemical Engineering, Minor in Project Management
     institution: McGill University
     year: 2016
 email: "amy.bolt@mail.mcgill.ca"
@@ -19,7 +19,7 @@ name: Amy Bolt
 organizations:
 - name: McGill University
   url: ""
-role: Master's research assistant
+role: Former Master's research assistant
 social:
 - icon: envelope
   icon_pack: fas
@@ -29,7 +29,7 @@ social:
   link: https://github.com/amybolt
 superuser: false
 user_groups:
-- Graduate Students
+- Alumni
 ---
 
-Amy completed her Bachelor's degree in Engineering with a minor in Project Management from McGill University in 2016. Having worked in the architecture and visual art industries, Amy took interest in examining and understanding the relationships between densification and community cohesion, and public art and gentrification. With a focus on short-term rentals, Amy is now a Master’s research assistant within the Urban Politics and Governance Research group with a specific focus on exploring the interactions between community resistance, social capital, and short-term rentals in major cities across North America. Amy is expected to complete her Master of Urban Planning from McGill University in 2020.
+Amy completed her Bachelor's degree in Engineering with a minor in Project Management from McGill University in 2016. Having worked in the architecture and visual art industries, Amy took interest in examining and understanding the relationships between densification and community cohesion, and public art and gentrification. With a focus on short-term rentals, Amy completed a 2019 internship as a Master’s research assistant within the Urban Politics and Governance Research group with a specific focus on exploring the interactions between community resistance, social capital, and short-term rentals in major cities across North America.
