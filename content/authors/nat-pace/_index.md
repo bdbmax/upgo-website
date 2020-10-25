@@ -11,10 +11,6 @@ education:
     institution: Wilfrid Laurier University
     year: 2017
 email: "natalie.pace@mcgill.mail.ca"
-interests:
-  - Critical cartography and geovisualization
-  - Local sustainability planning
-  - Urban economic geography
 name: Nat Pace
 organizations:
 - name: McGill University

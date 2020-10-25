@@ -11,10 +11,6 @@ education:
     institution: Bard College
     year: 2016
 email: "lou.seltz@mail.mcgill.ca"
-interests:
-- Housing affordability and alternative tenure models
-- Sustainability planning
-- Food security
 name: Lou Seltz
 organizations:
 - name: McGill University

@@ -11,10 +11,6 @@ education:
     institution: McGill University
     year: 2018
 email: "danielle.girard@mail.mcgill.ca"
-interests:
-- Environmental policy and planning
-- Urban governance
-- Community-led planning
 name: Danielle Girard
 organizations:
 - name: McGill University

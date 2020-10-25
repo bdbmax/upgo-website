@@ -11,10 +11,6 @@ education:
     institution: McGill University
     year: 2016
 email: "amy.bolt@mail.mcgill.ca"
-interests:
-- Community mobilization
-- Short-term rentals and the housing market
-- Public space re-design and gentrification
 name: Amy Bolt
 organizations:
 - name: McGill University
