@@ -11,10 +11,6 @@ education:
     institution: University of Ottawa
     year: 2015
 email: joanna.xiao@mail.mcgill.ca
-interests:
-- Transit planning
-- Technological innovation and impacts on privacy
-- Social injustices in planning
 name: Joanna Xiao
 organizations:
 - name: McGill University
