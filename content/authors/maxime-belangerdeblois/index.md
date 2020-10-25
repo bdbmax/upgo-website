@@ -1,6 +1,7 @@
 ---
-authors: maxime-belanger-deblois
-bio: My research interests include political economy, data analysis, and sustainable development.  
+authors: 
+- maxime-belangerdeblois
+bio: "My research interests include political economy, data analysis, and sustainable development."  
 education:
   courses:
   - course: Master of Urban Planning

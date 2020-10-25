@@ -1,7 +1,7 @@
 ---
 authors: 
 - cloe-sthilaire
-bio: My research interests include housing justice, housing financialization, and urban governance.  
+bio: "My research interests include housing justice, housing financialization, and urban governance."  
 education:
   courses:
   - course: Master of Urban Planning
@@ -34,5 +34,4 @@ superuser: no
 user_groups: 
 - Graduate Students
 ---
-
 Cloé St-Hilaire is currently a master’s student in Urban Planning at McGill University. She completed a Bachelor of Commerce in Sustainability Management and Urban Studies in 2019. She gained work experience in the social enterprise sector, working as a food security analyst for a vertical aquaponics start-up. Her interests include housing justice, financialization of multi-family rental housing, tenant rights and alternative tenure types. Over the summer of 2020, she worked with the UPGo group, looking at the impact of COVID-19 on both short- and long-term rental markets.
