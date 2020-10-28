@@ -18,7 +18,7 @@ interests:
 - 
 - 
 - 
-name: Akili-Atherley
+name: Akili Atherley
 organizations:
 - name: McGill University
   url: ''
