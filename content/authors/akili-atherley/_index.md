@@ -14,15 +14,11 @@ education:
     institution: The St. Michael School
     year: 2014
 email: akili-atherley@mail.mcgill.ca
-interests:
-- 
-- 
-- 
 name: Akili Atherley
 organizations:
 - name: McGill University
   url: ''
-role: Master's research assistant
+role: Former Master's research assistant
 social:
 - icon: github
   icon_pack: fab
@@ -35,6 +31,6 @@ social:
   link: 'mailto:akili-atherley@mail.mcgill.ca'
 superuser: no
 user_groups: 
-- Graduate Students
+- Alumni
 ---
 Originally from Barbados, Akili has a background in financing and accounting. She is interested in sustainable and social finance, real estate finance, infrastructure, data analysis and sustainable urban development to mobilize cities and businesses to create resilient systems and communities. 
