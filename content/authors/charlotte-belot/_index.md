@@ -1,7 +1,7 @@
 ---
 authors: 
 - charlotte-belot
-bio: My research interests include participatory design processes, equity in the housing sector, and visual communication/data visualization for planning.
+bio: My research interests include participatory design, equity in the housing sector, and visual communication/data visualization for planning.
 education:
   courses:
   - course: Master of Urban Planning
@@ -12,8 +12,8 @@ education:
     year: 2018
 email: charlotte.belot@mail.mcgill.ca
 interests:
-- Participatory design processes
-- Data visualization and communication
+- Participatory urban design
+- Data visualization and visual communication
 - Equity in the housing sector
 name: Charlotte Belot
 organizations:
