@@ -32,7 +32,7 @@ social:
   link: 'mailto:maxime.belangerdeblois@mail.mcgill.ca'
 superuser: no
 user_groups: 
-- Graduate Students
+- Researchers
 ---
 
 Currently an urban planning master’s student at McGill University, Maxime previously completed a BA with honours in Political Science and Economics at Université Laval, together with a supplementary degree in Spanish language. As a bachelor's student, he delved into the application of sustainable development ideas to economic theories. His current academic interests lie in the application of political and economic concepts to territorial and environmental issues. In pursuing these objectives, Maxime believes data analysis and visualization techniques to be essential. He is now a research assistant with the Urban Politics and Governance Research group, where he primarily focuses on the analysis and impact of the short-term rental market in North American cities in the context of COVID-19.

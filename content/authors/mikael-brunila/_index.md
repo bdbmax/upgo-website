@@ -35,7 +35,7 @@ social:
   link: https://github.com/maybemkl
 superuser: false
 user_groups:
-- Graduate Students
+- Researchers
 ---
 
 Mikael Brunila is a PhD student in Geography at McGill University. He graduated in 2017 as a Fulbright scholar from the [Quantitative Methods in the Social Sciences]([http://www.qmss.columbia.edu/](http://www.qmss.columbia.edu/)) program at Columbia University. He also holds BSc and MSc degrees in Political Science with minor subjects in Economics and Computer Science from the University of Helsinki. Brunila uses GIS, Bayesian inference and natural language processing to study semantic geographies in the sharing economy, governance through data science and machine learning as well as urban social movements. He previously worked as a journalist and has co-authored books on the [far-right in Finland](https://fi.wikipedia.org/wiki/%C3%84%C3%A4rioikeisto_Suomessa_(kirja)), [on the implementation of zero tolerance politics against graffiti in Helsinki](https://www.goodreads.com/book/show/13626595-muutaman-t-hryn-t-hden) and [on the political economy of the Internet](https://www.goodreads.com/book/show/23592812-verkko-suljettu). Brunila is also a member of the [Platial Analysis Lab](https://platial.science/) lead by professor Grant McKenzie.

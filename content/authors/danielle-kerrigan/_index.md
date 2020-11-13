@@ -34,6 +34,6 @@ social:
   link: https://twitter.com/djanekerrigan
 superuser: false
 user_groups:
-- Graduate Students
+- Researchers
 ---
 Danielle Kerrigan is a PhD student at McGill University, and graduate research assistant with the Urban Politics and Governance research group at McGill University. Working with Prof. David Wachsmuth, Canada Research Chair in Urban Governance, she helped to develop the big data spatial analysis methodology to better understand the impact of short-term rentals on displacement and housing systems. A former Policy Analyst with the Government of Canada, she began working with the Urban Politics and Governance research group at McGill as a masters student. Through this work, Danielle has had the opportunity to collaborate with community groups and policymakers to advocate for better regulations and protect declining affordable housing stocks. Her primary research interests relate to issues of housing affordability, social relations in the housing sector and short-term rentals. 

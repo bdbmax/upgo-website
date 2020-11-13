@@ -11,10 +11,6 @@ education:
     institution: McGill University
     year: 2018
 email: "ivana.nedyalkova@mail.mcgill.ca"
-interests:
--
--
--
 name: Ivana Nedyalkova
 organizations:
 - name: McGill University
@@ -22,6 +18,6 @@ organizations:
 role: Master's research assistant
 superuser: false
 user_groups:
-- Graduate Students
+- Alumni
 ---
 
