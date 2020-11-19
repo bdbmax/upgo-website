@@ -26,7 +26,7 @@ role: Master's research assistant
 social:
 - icon: linkedin
   icon_pack: fab
-  link: linkedin.com/in/maxime-bélanger-de-blois-301b94180
+  link: https://www.linkedin.com/in/maxime-bélanger-de-blois-301b94180
 - icon: envelope
   icon_pack: fas
   link: 'mailto:maxime.belangerdeblois@mail.mcgill.ca'
