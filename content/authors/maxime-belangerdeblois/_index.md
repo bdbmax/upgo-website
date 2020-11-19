@@ -15,9 +15,9 @@ education:
     year: 2019
 email: maxime.belangerdeblois@mail.mcgill.ca
 interests:
-- Housing justice
-- Financialization of housing
-- Urban governance
+- Political economy
+- Data analysis
+- Sustainable development
 name: Maxime Bélanger De Blois
 organizations:
 - name: McGill University
