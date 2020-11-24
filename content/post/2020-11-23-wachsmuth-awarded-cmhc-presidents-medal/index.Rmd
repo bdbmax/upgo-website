@@ -1,0 +1,34 @@
+---
+title: "Wachsmuth awarded CMHC President's Medal for outstanding housing research"
+author: "Charlotte Belot"
+date: '2020-11-23'
+output: html_document
+slug: wachsmuth-awarded-cmhc-presidents-medal
+categories: []
+tags:
+  - GIS
+  - Housing
+  - Media
+  - R
+  - Short-term rentals
+subtitle: ''
+summary: "A grant in recognition of our contributions to housing research in Canada"
+authors:
+  - charlotte-belot
+lastmod: '2020-11-23T07:00:06-04:00'
+featured: yes
+image:
+  placement: 3
+projects:
+  - short-term-rentals
+
+---
+
+Yesterday, November 22nd, was National Housing Day. To mark the occasion, we are pleased to announce that Prof. Wachsmuth recently received the President’s Medal for Outstanding Housing Research from the Canada Mortgage and Housing Corporation (CMHC) for our [ongoing project](/project/short-term-rentals/), "Cities, short-term rentals, and the sharing economy."
+
+The President’s Medal recognizes research that contributes to one of the National Housing Strategy’s [priority areas](https://www.cmhc-schl.gc.ca/en/nhs/guidepage-strategy/priority-areas-for-action). In our case, the Short-Term Rentals project contributes to the Balanced Supply of Housing node by addressing knowledge and policy gaps in this priority area.
+
+In cities across Canada and across the world, short-term rental services such as Airbnb have emerged as a technological disruption, economic opportunity, and governance challenge. While there is a growing body of literature on STRs from tourism and business perspectives, we know relatively little about their impacts on housing markets. UPGo, directed by Prof. Wachsmuth, has led the first major effort to systematically investigate the housing impacts of STRs, both in Canada and internationally. Some highlights so far include our [Canada-wide study](/publication/short-term-rentals-in-canada/) and City Spotlights exploring the STR markets in [Halifax](/publication/short-term-rentals-in-halifax/) and Charlottetown. 
+
+We’re grateful to CMHC for this recognition, and as this year comes to a close, we’re looking forward to continuing our work in 2021 with our series of City Spotlight reports and new research angles.
+

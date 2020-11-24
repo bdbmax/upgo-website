@@ -8,6 +8,7 @@ tags:
   - Short-term rentals
   - Montreal
   - Landlords
+  - Housing
 subtitle: ''
 summary: "Part 1 in a series discussing findings from interviews with STR hosts"
 authors:
