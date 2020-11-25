@@ -1,34 +1,31 @@
 ---
-title: "Wachsmuth awarded CMHC President's Medal for outstanding housing research"
+title: "Wachsmuth awarded CMHC President's Medal for Outstanding Housing Research"
 author: "Charlotte Belot"
 date: '2020-11-23'
 output: html_document
 slug: wachsmuth-awarded-cmhc-presidents-medal
 categories: []
 tags:
-  - GIS
   - Housing
-  - Media
-  - R
   - Short-term rentals
 subtitle: ''
 summary: "A grant in recognition of our contributions to housing research in Canada"
 authors:
   - charlotte-belot
-lastmod: '2020-11-23T07:00:06-04:00'
+lastmod: '2020-11-24T17:00:06-04:00'
 featured: yes
 image:
-  placement: 3
+  placement: 1
 projects:
   - short-term-rentals
 
 ---
 
-Yesterday, November 22nd, was National Housing Day. To mark the occasion, we are pleased to announce that Prof. Wachsmuth recently received the President’s Medal for Outstanding Housing Research from the Canada Mortgage and Housing Corporation (CMHC) for our [ongoing project](/project/short-term-rentals/), "Cities, short-term rentals, and the sharing economy."
+November 22nd was National Housing Day. To mark the occasion, we are pleased to announce that Prof. Wachsmuth has been awarded the 2020 President’s Medal for Outstanding Housing Research from the Canada Mortgage and Housing Corporation (CMHC) for his leadership of our [ongoing project](/project/short-term-rentals/), "The impact of short-term rentals on Canadian housing".
 
-The President’s Medal recognizes research that contributes to one of the National Housing Strategy’s [priority areas](https://www.cmhc-schl.gc.ca/en/nhs/guidepage-strategy/priority-areas-for-action). In our case, the Short-Term Rentals project contributes to the Balanced Supply of Housing node by addressing knowledge and policy gaps in this priority area.
+The President’s Medal is the nation's highest honour in housing research, and recognizes research that contributes to one of the National Housing Strategy’s [priority areas](https://www.cmhc-schl.gc.ca/en/nhs/guidepage-strategy/priority-areas-for-action). In our case, the Short-Term Rentals project contributes to the Balanced Supply of Housing node by addressing knowledge and policy gaps in this priority area. More details about the project are available on the [CMHC website](https://www.cmhc-schl.gc.ca/en/nhs/nhs-project-profiles/2020-nhs-projects/impact-short-term-rentals-canadian-housing).
 
-In cities across Canada and across the world, short-term rental services such as Airbnb have emerged as a technological disruption, economic opportunity, and governance challenge. While there is a growing body of literature on STRs from tourism and business perspectives, we know relatively little about their impacts on housing markets. UPGo, directed by Prof. Wachsmuth, has led the first major effort to systematically investigate the housing impacts of STRs, both in Canada and internationally. Some highlights so far include our [Canada-wide study](/publication/short-term-rentals-in-canada/) and City Spotlights exploring the STR markets in [Toronto](/2019/08/23/short-term-rentals-in-toronto-report/),  [Halifax](/publication/short-term-rentals-in-halifax/), and Charlottetown. 
+In cities across Canada and across the world, short-term rental services such as Airbnb have emerged as a technological disruption, economic opportunity, and governance challenge. While there is a growing body of literature on STRs from tourism and business perspectives, we know relatively little about their impacts on housing markets. UPGo, directed by Prof. Wachsmuth, has led the first major effort to systematically investigate the housing impacts of STRs, both in Canada and internationally. Some highlights so far include our [Canada-wide comparative study](/publication/short-term-rentals-in-canada/) and City Spotlights exploring the STR markets in [Toronto](/2019/08/23/short-term-rentals-in-toronto-report/),  [Halifax](/publication/short-term-rentals-in-halifax/), and Charlottetown. 
 
 We’re grateful to CMHC for this recognition, and as this year comes to a close, we’re looking forward to continuing our work in 2021 with our series of City Spotlight reports and new research angles.
 
