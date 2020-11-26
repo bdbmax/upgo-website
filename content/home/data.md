@@ -48,5 +48,5 @@ hero_media = "code.png"
 
 All of the code for our quantitative analysis projects is freely available for replication and repurposing on our [team Github page](https://github.com/UPGo-McGill). We often work with proprietary data which we are unable to share, but where we are using public data we share that as well.
 
-We are also working to develop **strr**, an R package for cleaning, analyzing and visualizing short-term rental data. We expect to release a stable version to CRAN later in 2019, but [the development version](https://github.com/UPGo-McGill/strr) is now available for testing and feedback.
+We are also working to develop **strr**, an R package for cleaning, analyzing and visualizing short-term rental data. We expect to release a stable version to CRAN in 2021, but [the development version](https://github.com/UPGo-McGill/strr) is now available for testing and feedback.
 

@@ -1,6 +1,6 @@
 ---
 date: "2019-06-13T00:00:00Z"
-external_link: "https://mcgill.ca/mssi/adapting-urban-environments-future"
+external_link: "https://www.mcgill.ca/mssi/research/research-themes/adapting-cities-future"
 image:
   focal_point: Smart
   caption: ""
