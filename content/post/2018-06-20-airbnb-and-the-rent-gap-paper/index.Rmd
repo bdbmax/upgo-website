@@ -17,7 +17,8 @@ image:
   caption: ''
   focal_point: 'bottom'
   preview_only: no
-projects: []
+projects:
+  - short-term rentals
 ---
 
 We're happy to announce that our paper, [“Airbnb and the rent gap: Gentrification through the sharing economy”](https://journals.sagepub.com/doi/full/10.1177/0308518X18778038) has now been published in Environment and Planning A: Economy and Space. The paper argues that short-term rentals have facilitated a form of gentrification that does not require redevelopment, by introducing a major new revenue flow into urban land markets. We use spatial analysis to precisely measure the impacts of Airbnb on NYC’s land and housing markets, and discuss the implications.
