@@ -8,7 +8,7 @@ tags:
   - Housing
   - COVID
 subtitle: ''
-summary: "The consequences of COVID for compact development are far from clear."
+summary: "The consequences of COVID for compact development"
 authors:
   - robin-basalaev-binder
   - akili-atherley
