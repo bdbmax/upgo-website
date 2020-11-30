@@ -44,7 +44,9 @@ As the pandemic nears its 12th month and populations across the globe continue t
 
 Despite the many advantages to urban living such as lower rates of obesity and lower infrastructural costs, the truth is, cities are meant to bring people together both intellectually and physically, which makes social distancing nearly impossible when a city works well. Furthermore, research shows that “density preferences may be more stable than many of the other perceptions studied so far and, correspondingly, efforts to change densities will likely have to be accompanied by extensive efforts to win over skeptical publics” (Hooper, 2020). 
 
-**REFERENCES**
+----
+
+<font size = 3>**REFERENCES**
 
 Acuto, M., Larcom, S., Keil, R., Ghojeh, M., Lindsay, T., Camponeschi, C., & Parnell, S. (2020). Seeing COVID-19 through an urban lens. Nature Sustainability, 1-2.
 
@@ -82,4 +84,4 @@ Oppel, L. (2020). Concrete versus COVID-19: How the built environment can limit 
 
 Patino, M. (2020, March 31). Why Asian countries have succeeded in flattening the curve. CityLab. https://www.citylab.com/life/2020/03/coronavirus-stay-at-home-order-lockdown-social-distancing/608857/
 
-Zillow. (2020, August 12). Zillow 2020 Urban-Suburban Market Report. Retrieved from https://www.zillow.com/research/2020-urb-suburb-market-report-27712/ 
+Zillow. (2020, August 12). Zillow 2020 Urban-Suburban Market Report. Retrieved from https://www.zillow.com/research/2020-urb-suburb-market-report-27712/</font>
