@@ -8,17 +8,16 @@ tags:
   - Housing
   - COVID
 subtitle: ''
-summary: "The consequences of COVID for compact development are from clear."
+summary: "The consequences of COVID for compact development are far from clear."
 authors:
   - robin-basalaev-binder
   - akili-atherley
-  - jenni-chung
 lastmod: '2020-11-30T17:00:06-04:00'
 featured: yes
 image:
   placement: 1
   focal point: smart
-  caption: Groups socialize in Greenwich Park, London. Photo by [Alan Stanton](https://www.flickr.com/photos/alanstanton/15080619725/in/photolist-oYC7QV-21inHSo-bCWhDp-DvQPtj-21cVaTX-22Ry7up-Y4k9qN-22TDqXt-JgvRJ4-Zs9isH-225FvMS-WfcVG3-Z68X62-YxHbmj-2hmJ6Mn-e1H3VT-2ehhMp5-29U79uz-9SfiNf-fDe1BY-CFcD6b-6GJDYA-yB2kGt-oknLZe-a7mwpG-9D49yi-a91KFY-61zbh2-cEdKfG-XfPnNL-6XxNsU-8D6ZKr-pZM1kP-61zaut-6GJvxu-d8Gw3m-a8XWGV-8Daa4J-a8XW7i-a8XU1e-cEdHoN-6GJArJ-a8XUTk-6GKUJY-a8XXNa-a8XUor-a8XUWx-a91JUA-a91NwY-8sssv4)
+  caption: Photo by [Alan Stanton](https://www.flickr.com/photos/alanstanton/15080619725/in/photolist-oYC7QV-21inHSo-bCWhDp-DvQPtj-21cVaTX-22Ry7up-Y4k9qN-22TDqXt-JgvRJ4-Zs9isH-225FvMS-WfcVG3-Z68X62-YxHbmj-2hmJ6Mn-e1H3VT-2ehhMp5-29U79uz-9SfiNf-fDe1BY-CFcD6b-6GJDYA-yB2kGt-oknLZe-a7mwpG-9D49yi-a91KFY-61zbh2-cEdKfG-XfPnNL-6XxNsU-8D6ZKr-pZM1kP-61zaut-6GJvxu-d8Gw3m-a8XWGV-8Daa4J-a8XW7i-a8XU1e-cEdHoN-6GJArJ-a8XUTk-6GKUJY-a8XXNa-a8XUor-a8XUWx-a91JUA-a91NwY-8sssv4)
 projects:
   - COVID
 ---
