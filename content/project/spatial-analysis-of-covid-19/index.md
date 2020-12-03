@@ -8,7 +8,7 @@ links:
 slides: 
 summary: An investigation into the effects of the COVID-19 pandemic on Canadian urban neighbourhoods 
 tags:
-- COVID
+- COVID-19
 title: A spatial analysis of COVID-19 risk and recovery in Canadian cities
 url_code: ""
 url_pdf: ""
