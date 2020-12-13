@@ -1,0 +1,68 @@
+---
+title: "How have cities adapted to COVID?"
+date: "December 14, 2020"
+output: html_document
+slug: covid-built-environment-adaptation
+categories: []
+tags:
+  - COVID-19
+subtitle: ''
+summary: "A summary of early COVID adaptation strategies in cities"
+authors:
+  - robin-basalaev-binder
+  - jenni-chung
+lastmod: '2020-12-21T17:00:06-04:00'
+featured: yes
+image:
+  placement: 1
+  focal point: smart
+  caption: Photo by [Katell Ar Gow](https://www.flickr.com/photos/145780790@N06/50451731213/)
+projects:
+  - spatial-analysis-of-covid-19
+---
+
+*This is a continuation of our series, __COVID-19 and the urban environment__.*
+
+From the first emergence of the COVID-19 pandemic in Wuhan, China to its worldwide spread, the disease has commonly been understood as an urban phenomenon. Urban areas have been hit the hardest, and even those with lesser outbreaks have already seen significant changes to work and social life, and to their urban landscapes and built forms. Over the next several weeks, we will be releasing findings from research we conducted this past summer on COVID and urban life. We aim to provide a broad look at current responses, tactics, and consequences of the pandemic.
+
+**Adaptation strategies**
+
+New urban strategies to address and adapt to current COVID conditions have been developing since the start of the pandemic. Urban planners and designers may find themselves playing an important role as urban life becomes increasingly intertwined with COVID-19 - from mitigating it to adapting to it (Garcia, 2020). Questions that previously were on the back burner or simply not on cities’ radars, are now pushed to the forefront.
+
+Several cities have already taken rapid response measures, prioritizing areas with high residential densities and limited open air spaces. These changes involve making primarily temporary changes to their built form to accommodate for social distancing, for example, and to increase pedestrian and cycling space, including Oakland, Bogota, Mexico City, Vancouver, Milan, Denver (Crawford, 2020). Working life for many in the workforce may not return to normal, from commuting to offices themselves (e.g. Green and Davis, 2020). Cities and regions have already begun addressing future-oriented questions regarding road and transit policies, including a push for increased automated traffic enforcement programs (Pascale, 2020) and new transit options targeting essential service destinations (Cooperman, 2020). Urban areas themselves may see a decrease in commercial and residential inhabitants as businesses and residents with the financial ability to move flee to the suburbs (Hughes, 2020), exacerbating the pandemic’s effects on urban communities of color (e.g. Johnson, 2020; Austin, 2020). 
+
+Along with providing physical measures, cities are also increasing policing to make sure social distancing is enforced. In the US and in Canada, this is shedding light on the racial biases in policing and enforcement. For example, in San Francisco, Dolores Park (a public space frequented by primarily white and Asian users) was allowed to stay open while 24th BART station (a public space frequented by black and latinx users) was taped off for public health concerns (GAY SHAME, 2020). In New York City, a police officer was recently filmed violently tackling a black pedestrian for violating social distancing measures (Sisak, 2020). In Hamilton, Ontario, homeless siblings were ticketed with a $880 fine for setting up camp on a private property during the pandemic (Gerster & Russell, 2020).
+
+COVID and post-COVID strategies have the potential to determine many outcomes for urban futures, incorporating public health needs with planning, policy, and economic strategies (Forsyth, 2020). These outcomes will affect people differently, with certain communities at higher risk of contracting COVID, experiencing other health issues, death, as well as detriments to their mental health, community cohesion, and financial stability. Elderly people, people of color, lower income, and immigrant communities - especially undocumented immigrants in the American context - are among the most vulnerable populations in the face of COVID and its consequences (Bonifacio, 2020; CDC, 2020; Johns Hopkins Medicine, 2020; Scheyer, 2020). As cities move to respond as rapidly as possible to the ongoing crisis, vulnerable individuals and marginalized communities already faced with greater need and fewer resources already find themselves facing higher death rates with no clear plan to remedy existing inequities  (Shafaieh, 2020).
+
+Other emerging discourses surrounding COVID-19 and urban environments include data, surveillance, and privacy; carceral spaces; changing architectural typologies (cultural spaces, office spaces, etc.); and effective reopening models (and their impact on housing, transit, food supply, healthcare, and demographics).
+
+---
+
+<font size = 3>**REFERENCES**
+
+Austin, J. C. (2020, April 17). COVID-19 is turning the Midwest’s long legacy of segregation deadly. Retrieved from https://www.brookings.edu/blog/the-avenue/2020/04/17/covid-19-is-turning-the-midwests-long-legacy-of-segregation-deadly/ 
+
+Cooperman, F. (2020, April 22). Ten cities that have redefined public transportation during COVID-19. Retrieved from https://www.masstransitmag.com/alt-mobility/shared-mobility/article/21135013/via-transportation-10-cities-that-have-redefined-public-transportation-during-covid19 
+
+Crawford, A. (2020, April 23). The Coronavirus Shows It's Time To Remake The American City. Retrieved from https://www.huffingtonpost.ca/entry/coronavirus-remake-cities-cars-pollution-walking-cycling_n_5e9eb1e5c5b63c5b587419a3?ri18n=true 
+
+Forsyth, A. (2020, March 19). What role do planning and design play in a pandemic? Ann Forsyth reflects on COVID-19’s impact on the future of urban life. Retrieved from https://www.gsd.harvard.edu/2020/03/what-role-do-planning-and-design-play-in-a-pandemic-ann-forsyth-reflects-on-covid-19s-impact-on-the-future-of-urban-life/ 
+
+Garcia, E. (2020, March 24). How to mitigate the impact of an epidemic and prevent the spread of the next viral disease: A guide for designers. Retrieved from https://www.gsd.harvard.edu/2020/03/how-to-mitigate-the-impact-of-an-epidemic-and-prevent-the-spread-of-viral-diseases-a-guide-for-designers/ 
+
+GAY SHAME. [@Evict_Twit_ter]. (2020, May 3). Want to understand the racist politics of #COVIDー19 in San Francisco? The first pic is today at Dolores Park which [Tweet]. Twitter. https://twitter.com/Evict_Twit_ter/status/1257107292190720000
+
+Gerster, J. & Russell, A. (2020, April 30). Crowded shelter or $880 fine? Homeless face ‘impossible’ coronavirus choice. Global News. https://globalnews.ca/news/6871927/coronavirus-fines-homeless/
+
+Green, J. & Davis, M. F. (2020, May 1). The Office You Left Is Not Going to Be the Office You Return To. Retrieved from https://www.bloomberg.com/news/articles/2020-05-01/the-office-you-left-is-not-going-to-be-the-office-you-return-to 
+
+Hughes, C.J. (2020, April 28). Real estate activity in suburbs catches second wind in Covid era. Retrieved from https://therealdeal.com/2020/04/28/real-estate-activity-in-suburbs-catches-second-wind-in-covid-era/?fbclid=IwAR0xlS6vk1LAEGtjZ96brTQJH-LI8U4g4bYpUAoKo5J8Kz8OsIy2A71jIxg 
+
+Johnson, D. (2020, May 11). When it comes to Covid-19, another case of white flight. Retrieved from. https://www.cnn.com/2020/05/11/opinions/covid-19-case-white-flight-johnson/index.html 
+
+Pascale, J. (2020, May 1). How Does Transportation And Commuting Change In A Post-Coronavirus World? We Asked Experts. Retrieved from https://wamu.org/story/20/05/01/how-does-transportation-and-commuting-change-in-a-post-coronavirus-world-we-asked-experts/?fbclid=IwAR0eZgX15CE9FfJFkFO2Fef_vK5J6nRCxXL8Y7_Rhb91kYyYLzqJDszfoeo 
+
+Shafaieh, C. (2020, April 27). A radical transformation in building and designing for health is underway—but not everyone will benefit equally. Retrieved from https://www.gsd.harvard.edu/2020/04/the-pandemic-may-instigate-a-radical-transformation-in-building-and-designing-for-health-but-not-everyone-will-benefit-equally/ 
+
+Sisak, M. (2020, May 4). NYPD criticized over viral videos depicting violent arrests for alleged social distancing infractions. TIME. https://time.com/5831717/nypd-arrests-coronavirus-social-distancing/
