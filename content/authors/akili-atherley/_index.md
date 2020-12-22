@@ -1,7 +1,7 @@
 ---
 authors: 
 - akili-atherley
-bio: "My research interests include ."  
+bio: "My research interests include sustainable/social real estate finance, infrastructure, and urban development for resilience."  
 education:
   courses:
   - course: Master of Urban Planning

@@ -1,7 +1,7 @@
 ---
 authors:
 - lou-seltz
-bio: ""
+bio: "My research interests include housing affordability and alternative tenure models, sustainability planning, and food security"
 education:
   courses:
   - course: Master of Urban Planning

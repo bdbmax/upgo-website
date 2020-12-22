@@ -1,7 +1,7 @@
 ---
 authors: 
 - charlotte-belot
-bio: 
+bio: My research interests include participatory urban design/planning, design/data visualization, and housing justice. 
 education:
   courses:
   - course: Master of Urban Planning

@@ -1,0 +1,71 @@
+---
+title: "COVID-19 in Montreal"
+date: "January 11, 2020"
+output: html_document
+slug: covid-built-environment-montreal
+categories: []
+tags:
+  - COVID-19
+subtitle: ''
+summary: "A portrait of how COVID-19 has changed life in Montreal"
+authors:
+  - robin-basalaev-binder
+  - jenni-chung
+lastmod: '2021-01-11T19:00:06-04:00'
+featured: yes
+image:
+  placement: 1
+  focal point: smart
+  caption: Photo by [Sean Marshall](https://www.flickr.com/photos/7119320@N05/50314307316/)
+projects:
+  - spatial-analysis-of-covid-19
+---
+
+*This is a continuation of our series, __COVID-19 and the urban environment__.*
+
+From the first emergence of the COVID-19 pandemic in Wuhan, China to its worldwide spread, the disease has commonly been understood as an urban phenomenon. Urban areas have been hit the hardest, and even those with lesser outbreaks have already seen significant changes to work and social life, and to their urban landscapes and built forms. Over the next several weeks, we will be releasing findings from research we conducted this past summer on COVID and urban life. We aim to provide a broad look at current responses, tactics, and consequences of the pandemic.
+
+**The situation in Montreal**
+
+Montreal has seen some of the highest numbers in Canada, and has the highest COVID death rate in the country. As of June 16, 2020, 26,757 cases were confirmed, with 3,216 deaths (Luft, 2020a). This represents roughly half of the over 54,000 cases and two thirds of the 5,298 COVID-related deaths in the province (Luft, 2020b). 
+
+Premier Legault acted early, on March 11, 2020, by forbidding gatherings of over 250 people and isolating travelers, before closing certain businesses on March 12 and declaring a public health emergency on March 13. By March 15, the province had instituted social distancing guidelines, canceled religious and other large gatherings, and severely reduced capacity for or closed restaurants and other businesses. On March 16, the province closed schools while the Canadian border was also shut. Montreal declared a health emergency on March 27, after other nonessential businesses had been shut down, and the first COVID-related deaths had been announced by the province (INSPQ, 2020). 
+
+While Premier Legault’s early response was praised at the start of the pandemic in March, as it’s worn on criticism has surfaced, primarily centred on the high death toll COVID-19 has taken on Quebec. Recent polls reflect this, with respondents’ satisfaction with Legault dropping from 95% in April to 77% in May (Valiante & Banerjee, 2020). Starting April 15, the province began pursuing reopenings, first of limited construction industry, then soon followed by university research, stores with outdoor entrances, and schools (May 11). By June 1, several other reopenings were approved, including health and personal and aesthetic care centers, camping, and auditoriums and studios for recording purposes (INSPQ, 2020).  
+
+As Quebec continues to make plans towards full reopening, tensions have risen with indigenous communities, who have strengthened measures to protect their residents. Police checks and roadblocks were removed across much of the province in May, allowing greater car travel across the province and putting Indigenous lands and people at risk, especially considering that Indigenous peoples in Canada have long experienced inequitable access to healthcare services and treatment (e.g. Cameron et al, 2014; Wilson & Cardwell, 2012). Quebec’s moratorium on evictions was ended in late July, with the Rental Board even opening up a second building to hear more cases (Caruso-Moro, 2020), forcing residents and lower-income individuals into more uncertainty. 
+
+**Residential and Long-term Care Centers**
+
+Responsible for two thirds of all COVID-related deaths (Luft, 2020b), one area that the City has experienced a hard time containing the outbreak is in long-term care homes (CHLSD). As of April 24, 2020, more than 63% of all deaths in the province have been in CHLSDs (D’Amours, 2020). The outbreak of COVID-19 in CHLSDs has been attributed to the shuffling of workers from facility to facility by which the workers themselves are at risk of spreading the virus to their families. (Stevenson & Shingles, 2020). Low-income neighbourhoods, such as Montreal-Nord, which is highly populated with newcomers such as asylum seekers, have particularly been hit hard with outbreaks of the virus. The path for many asylum seekers arriving in Quebec have taken them to CHLSDs where they are working on the front lines to battle the virus in the care homes and exposing them to greater COVID-related risks (Lowrie, 2020). One asylum seeker, Ze Benedicte, who arrived in Canada four years ago from Cameroon contracted the virus while working at a long-term care home in Montreal’s west end after being laid off from a fast food restaurant (Lowrie, 2020). 
+
+Benedicte also highlighted an issue as it pertains to social inequities of health care workers. Benedicte indicated that after showing symptoms of the virus, she could not get a test due to the fact that she had no medicare care (Lowrie, 2020).  Quebec Premier François Legault was seen praising the asylum seekers, stating that they made up a large portion of “guardian angels”.  However, Benedicte, after being rejected for testing before finally being approved to get tested, stated that “when we die at the front lines, we’re called guardian angels, but when we need to be treated on equal footing, we’re not guardian angels. We’re nobody, we’re invisible.” (Lowrie, 2020). Many of the asylum seekers are hoping that their acts of services will aid in the government granting them permanent residency as they often work on the front lines with no status (Stevenson & Shingler, 2020). One such refugee is Sarah, who’s refugee claim had previously been rejected twice (Stevenson & Shingler, 2020). 
+
+Also in CHLSDs, the government put a hamper in reintegrating caregivers back into eight of the care homes due to the high risk of transmission of the virus. Eighty five percent of residents in CHLSDs are helped by a caregiver (Greig & Kovac, 2020). 
+
+**COVID-19 and the Built Environment in Quebec/Montreal**
+
+The onset of COVID-19 has had a significant impact on the built environment in Montreal and Quebec, including public transportation and sidewalks, public infrastructure, and other economic approaches in the face of COVID. Urban planning and transit are fundamental elements which facilitate economic activity (Shearmur, 2020), and the relationship between these, and the effect to which COVID impacts transit and the built environment, and how, in turn, they impact Montreal and Quebec’s economic recovery from COVID, still remain to be seen but will likely prove relevant as they transition into economic recovery.
+
+Public transit in particular may take a hit due to the pandemic, with one survey suggesting that public transit usage would drop from 41% (of survey respondents) pre-COVID to 26% after the pandemic. Private cars, on the other hand, saw and increase in respondents’ usage, from 47% to 52% (Vézina, 2020a). 
+
+One of the buses in Montreal’s STM network has been transformed into mobile testing clinics in areas hit hardest by COVID-19, which include Montreal-Nord, Saint-Michel, Rivière-des-Prairies and Verdun (Maratta, 2020). The City has plans to transform more buses into mobile testing clinics which would be able to test 100 people per day (Luft, 2020). According to Luft (2020), testing on the buses turned clinics would only be reserved for those displaying symptoms such as fever, difficulty breathing and dry cough and would therefore not be available for use for general testing.
+
+Montreal has announced plans to introduce additional bicycle and pedestrian lanes and paths as it transitions to reopening, four months into the pandemic. Included in this plan are 112 kilometers of new active safety lanes (37km in bicycle paths and 61km in pedestrian paths) to be rolled out in several phases. 88 additional kilometers of streets will be reconfigured for cyclist and pedestrian access, as well. This plan also includes the repurposing of some parking spaces on specific streets to integrate the new bicycle and pedestrian paths (Ville de Montreal, 2020). 1.6 kilometers of Saint-Catherine Street Ouest (between Metcalfe and Atwater) are already being pedestrianized during weekends of summer, 2020 (Goudreault, 2020a).
+
+These proposals come just as Bill 61 was announced in late-June, known as an “Act to restart Quebec’s economy and to mitigate the consequences of the public health emergency” which seeks to push 202 infrastructure projects across the province into fast track (Laframboise, 2020). The projects include renovations on certain Montreal hospitals, construction on 48 senior homes in the province, the expedited extension of Montreal’s Blue metro line, and new elementary schools (ibid, 2020). While plans are in place to put additional funding into the STM system, BIXI, Montreal’s shared bike service, reports concern over revenue cuts in 2020 due to COVID. Although BIXI ended 2019 with a large surplus, it may not prove sufficient to cover losses incurred as a result of the novel coronavirus (Goudreault, 2020b). 
+
+**COVID and Social Inequities/Disparities in Montreal**
+
+Just as in innumerable other cities across North America and the globe, COVID-19 has impacted different communities in Montreal at different rates, with some more vulnerable to it and its effects. Lower income individuals and households, as well as immigrant communities and asylum-seekers, and Indigenous peoples are among those at higher risk, due to, among other factors, income and housing insecurity, as well as healthcare disparities. While early COVID cases resulted primarily from travelers returning to Montreal, outbreaks in more affluent neighbourhoods were better contained than in lower-income neighbourhoods, such as Montreal-Nord, Mercier-Hochelaga-Maisonneuve, Ahunstic-Cartierville, and Parc-Ex (e.g. Stevenson & Shingler, 2020; Vézina, 2020b).
+
+By May, nearly 10 % of the COVID cases in Montreal hit Montreal North, a historically lower income neighbourhood than the rest of the city (27.7% of Montreal North households are low-income, compared to 21.3 for the island of Montreal) (Luft, 2020c). In Parc-Ex, residents feel the pressure of the impending end of the moratorium on evictions. With rents rising, and the city’s vacancy rate at an all time low, residents of the neighbourhood remain worried of the consequences of the lifting of the eviction moratorium (CBC, 2020 TKTK). Parc-Ex has seen increasing evictions in recent years for renovation and to charge higher rents amid gentrification (e.g. Reynolds, 2019). 
+
+Another group hit hard by COVID includes incarcerated individuals.  the Federal Training Center, experienced the worst COVID outbreak in any Canadian prison. Also located in Montreal, the FTC had nearly 200 inmates test positive, and at least one death (Ross, 2020a). This prison also houses primarily Inuit men, as well as men with psychiatric needs in another ward (psychiatric center) nearby. Nearly half of the tests conducted were positive (Ross, 2020b).
+
+Another incarceration facility, the Montreal Detention Center (previously known as Bordeaux jail) experienced the largest outbreak of detention centers in the province. Nearly 100 inmates tested positive for the virus between April and late May, during which a lockdown took place, and one inmate died (CBC, 2020). Several inmates complained about conditions during the lockdown. Showers were not allowed during lockdown, and inmates were not allowed out of their cells (Cherry, 2020). Civil rights groups called on the government to release at-risk inmates, highlighting the death of a 72-year old man in detention following complications from the virus. (CBC, 2020). Additional reports from people detained at the center mention failed safety measures and lack of regard for the wellbeing of those being held there. 75 % of Quebec prisoners are awaiting trial and could be released on bail. 
+
+---
+
+<font size = 3>**REFERENCES**
+

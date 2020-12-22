@@ -1,7 +1,7 @@
 ---
 authors:
 - jenni-chung
-bio: My research interests include.
+bio: My research interests include the role of heritage, cultural identity, and the process of co-design in suburban densification.
 education:
   courses:
   - course: Master of Urban Planning
