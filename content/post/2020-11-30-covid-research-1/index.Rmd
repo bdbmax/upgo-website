@@ -1,6 +1,6 @@
 ---
-title: "Does dense urban living spread COVID?"
-date: "November 30, 2020"
+title: "Does dense urban living spread COVID-19?"
+date: June 15, 2020"
 output: html_document
 slug: covid-built-environment-density
 categories: []
@@ -12,7 +12,7 @@ summary: "The consequences of COVID for compact development"
 authors:
   - robin-basalaev-binder
   - akili-atherley
-lastmod: '2020-11-30T17:00:06-04:00'
+lastmod: '2020-06-15T17:00:06-04:00'
 featured: yes
 image:
   placement: 1
@@ -34,13 +34,13 @@ The built environment refers to the totality of human-constructed spaces in whic
 
 The outbreak of COVID-19 in major cities across the world is challenging the way people perceive urban growth. “This is not life as usual. There is a density level in NYC that is destructive. It has to stop, and it has to stop now. NYC must develop an immediate plan to reduce density,” tweeted Governor Andrew Cuomo (2020) on March 22 while presiding over one of the deadliest concentrations of the outbreak.
 
-While Cuomo's perspective was common in the early days of the pandemic, even in Spring 2020 there were signs pointing in the other direction. For one, many hyper-dense Asian cities such as Seoul, Singapore, Hong Kong, and Tokyo managed to contain the virus with early detection and strict quarantine enforcement (Patino, 2020).
+While Cuomo's perspective was common in the early days of the pandemic, even then there were signs pointing in the other direction. For one, many hyper-dense Asian cities such as Seoul, Singapore, Hong Kong, and Tokyo managed to contain the virus with early detection and strict quarantine enforcement (Patino, 2020).
 
 A later analysis by New York University’s Furman Center (2020) found that, while “COVID-19 is more prevalent in areas where more people reside in crowded units,” the “[o]verall population density is not associated with higher rates of COVID-19 cases.” Even when density is examined in its various aspects — number of inhabitants per area, number of units in a building, and number of residents per unit — the result remains the same: there is no significant correlation between density (or even overcrowding) and higher rates of COVID-19 (Fox, 2020). 
 
 A study from the London School of Economics and Political Science looking at the link between COVID-19 spread and density further found that while urban density seems to have affected the timing of COVID-19 outbreaks, it found “no evidence that population density is linked with COVID-10 incidence once [it adjusts] for the timing of the onset of the disease…” (Carozzi et al., 2020). Hamidi et al. (2020) note that urban areas with more counties that have economic, social, and commuting links to each other are more vulnerable to COVID-19 outbreaks, suggesting that connectivity matters more than density, also applicable to places in China with more connectivity to Wuhan (Lin et al., 2020). They further found a negative correlation between county density and COVID-19 mortality rates (ibid). Areas with high density are additionally often better prepared and have better access to resources than lower-density areas when faced with public health emergencies such as COVID-19. 
 
-As the pandemic nears its 12th month and populations across the globe continue to struggle to adjust to their new realities, many perspectives on cities and city life have emerged. Many dozens of media articles have been published declaring a mass exodus from cities to the suburbs amidst the pandemic, often referencing density and related factors as the reason and contributing, directly and indirectly, to the conversation on density and cities (e.g. Bahney, 2020; Marsh, 2020; Mull 2020). The numbers do not paint a clear picture, yet the conversation continues. According to Zillow’s 2020 urban-suburban market report, suburban housing markets in the United States have not disproportionately increased compared to urban ones, and both are presently “hot sellers” (Zillow, 2020). In Canada, some cities have seen increased prices for single family homes in the suburbs, such as Montreal’s North Shore where median prices increased 27% since 2019 (Balakrishnan, 2020a). In Toronto, condo sales in the suburbs rose 28.4% since 2019, and fell 8.5% in the City of Toronto (Balakrishnan, 2020b). Despite any ambiguity in the rates of people leaving or entering urban areas, radical changes can already be seen in urban environments, and the necessity for urban areas to communicate, to act as a network and in solidarity remains (Acuto et al., 2020).
+As the pandemic nears its 4th month and populations across the globe continue to struggle to adjust to their new realities, many perspectives on cities and city life have emerged. Many dozens of media articles have been published declaring a mass exodus from cities to the suburbs amidst the pandemic, often referencing density and related factors as the reason and contributing, directly and indirectly, to the conversation on density and cities (e.g. Mull 2020). The numbers do not paint a clear picture, yet the conversation continues. 
 
 Despite the many advantages to urban living such as lower rates of obesity and lower infrastructural costs, the truth is, cities are meant to bring people together both intellectually and physically, which makes social distancing nearly impossible when a city works well. Furthermore, research shows that “density preferences may be more stable than many of the other perceptions studied so far and, correspondingly, efforts to change densities will likely have to be accompanied by extensive efforts to win over skeptical publics” (Hooper, 2020). 
 
@@ -49,12 +49,6 @@ Despite the many advantages to urban living such as lower rates of obesity and l
 <font size = 3>**REFERENCES**
 
 Acuto, M., Larcom, S., Keil, R., Ghojeh, M., Lindsay, T., Camponeschi, C., & Parnell, S. (2020). Seeing COVID-19 through an urban lens. Nature Sustainability, 1-2.
-
-Bahney, A. (2020, September 1). These people have left big cities for good. Here's where they landed. CNN. Retrieved from https://www.cnn.com/2020/08/31/success/leaving-the-city-for-suburbs/index.html 
-
-Balakrishnan, A. (2020a, October 12). As suburban homes get big-city price tags, longer commutes look like better deals. The Globe and Mail. https://www.theglobeandmail.com/real-estate/article-as-suburban-homes-get-big-city-price-tags-longer-commutes-look-like/ 
-
-Balakrishnan, A. (2020b, November 4). Toronto home prices rise 13.7 per cent year-over-year. The Canadian Press. https://www.cp24.com/news/toronto-home-prices-rise-13-7-per-cent-year-over-year-1.5174770 
 
 Boone, S. A., & Gerba, C. P. (2007). Significance of Fomites in the Spread of Respiratory and Enteric Viral Disease. Applied and Environmental Microbiology, 73(6), 1687–1696. doi: 10.1128/aem.02051-06
 
@@ -74,8 +68,6 @@ Kolko, J. (2020, April 15). Where COVID19 death rates are highest. Jed Kolko. ht
 
 Lin, C., Lau, A. K., Fung, J. C., Guo, C., Chan, J. W., Yeung, D. W., ... & Lao, X. Q. (2020). A mechanism-based parameterisation scheme to investigate the association between transmission rate of COVID-19 and meteorological factors on plains in China. Science of the Total Environment, 737, 140348.
 
-Marsh, S. (2020, September 26). Escape to the country: how Covid is driving an exodus from Britain’s cities. The Guardian. Retrieved from https://www.theguardian.com/world/2020/sep/26/escape-country-covid-exodus-britain-cities-pandemic-urban-green-space 
-
 Mull, A. (2020, June 15). The High Cost of Panic-Moving. The Atlantic. Retrieved from https://www.theatlantic.com/health/archive/2020/06/pandemic-cities-moving-remote-work/613069/ 
 
 NYU Furman Center. (2020, April 10). COVID-19 cases in New York City, a neighborhood-level analysis. NYU Furman Center. https://furmancenter.org/thestoop/entry/covid-19-cases-in-new-york-city-a-neighborhood-level-analysis
@@ -84,4 +76,3 @@ Oppel, L. (2020). Concrete versus COVID-19: How the built environment can limit 
 
 Patino, M. (2020, March 31). Why Asian countries have succeeded in flattening the curve. CityLab. https://www.citylab.com/life/2020/03/coronavirus-stay-at-home-order-lockdown-social-distancing/608857/
 
-Zillow. (2020, August 12). Zillow 2020 Urban-Suburban Market Report. Retrieved from https://www.zillow.com/research/2020-urb-suburb-market-report-27712/</font>

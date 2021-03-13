@@ -1,6 +1,6 @@
 ---
-title: "How has COVID changed our public spaces?"
-date: "December 14, 2020"
+title: "How has COVID-19 changed our public spaces?"
+date: "June 29, 2020"
 output: html_document
 slug: covid-built-environment-public-space
 categories: []
@@ -11,7 +11,7 @@ summary: "The consequences of COVID-19 for public spaces"
 authors:
   - robin-basalaev-binder
   - akili-atherley
-lastmod: '2020-12-14T17:00:06-04:00'
+lastmod: '2020-06-29T17:00:06-04:00'
 featured: yes
 image:
   placement: 1

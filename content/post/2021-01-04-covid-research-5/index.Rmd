@@ -1,6 +1,6 @@
 ---
 title: "How has COVID affected social inequities?"
-date: "January 4, 2020"
+date: "July 27, 2020"
 output: html_document
 slug: covid-built-environment-social-inequities
 categories: []
@@ -11,7 +11,7 @@ summary: "A summary of the impacts of COVID-19 on urban social justice"
 authors:
   - robin-basalaev-binder
   - jenni-chung
-lastmod: '2021-01-04T17:00:06-04:00'
+lastmod: '2020-07-27T17:00:06-04:00'
 featured: yes
 image:
   placement: 1

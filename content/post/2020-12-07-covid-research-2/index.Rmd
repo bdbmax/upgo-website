@@ -1,6 +1,6 @@
 ---
-title: "How has COVID impacted public transit?"
-date: "December 7, 2020"
+title: "How has COVID-19 impacted public transit?"
+date: "June 22, 2020"
 output: html_document
 slug: covid-built-environment-transit
 categories: []
@@ -12,7 +12,7 @@ summary: "The consequences of COVID-19 for public transit"
 authors:
   - robin-basalaev-binder
   - akili-atherley
-lastmod: '2020-12-07T17:00:06-04:00'
+lastmod: '2020-06-22T17:00:06-04:00'
 featured: yes
 image:
   placement: 1

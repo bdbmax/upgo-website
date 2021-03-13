@@ -1,6 +1,6 @@
 ---
 title: "COVID-19 in Montreal"
-date: "January 11, 2020"
+date: "August 3, 2020"
 output: html_document
 slug: covid-built-environment-montreal
 categories: []
@@ -11,7 +11,7 @@ summary: "A portrait of how COVID-19 has changed life in Montreal"
 authors:
   - robin-basalaev-binder
   - jenni-chung
-lastmod: '2021-01-11T19:00:06-04:00'
+lastmod: '2020-08-03T19:00:06-04:00'
 featured: yes
 image:
   placement: 1
@@ -21,7 +21,7 @@ projects:
   - spatial-analysis-of-covid-19
 ---
 
-*This is a continuation of our series, __COVID-19 and the urban environment__.*
+*This is the final article of our series, __COVID-19 and the urban environment__.*
 
 From the first emergence of the COVID-19 pandemic in Wuhan, China to its worldwide spread, the disease has commonly been understood as an urban phenomenon. Urban areas have been hit the hardest, and even those with lesser outbreaks have already seen significant changes to work and social life, and to their urban landscapes and built forms. Over the next several weeks, we will be releasing findings from research we conducted this past summer on COVID and urban life. We aim to provide a broad look at current responses, tactics, and consequences of the pandemic.
 
@@ -68,3 +68,50 @@ Another incarceration facility, the Montreal Detention Center (previously known 
 
 <font size = 3>**REFERENCES**
 
+Bruemmer, R. (2020, July 5). A trail of death, sorrow and what-ifs: How COVID spread in Montreal. Retrieved from https://montrealgazette.com/news/local-news/a-trail-of-death-sorrow-and-what-ifs-how-covid-spread-in-montreal
+
+Cameron, B. L., Plazas, M. D. P. C., Salas, A. S., Bearskin, R. L. B., & Hungler, K. (2014). Understanding inequalities in access to health care services for aboriginal people: a call for nursing action. Advances in Nursing Science, 37(3), E1-E16.
+
+Caruso-Moro, L., & Ross, S. (2020, July 21). As evictions restart, rental board opens second Montreal building to hear more cases. Retrieved from https://montreal.ctvnews.ca/as-evictions-restart-rental-board-opens-second-montreal-building-to-hear-more-cases-1.5033765?cache=dkorkzbx%3FclipId%3D104066
+
+CBC News. (2020a, June 14). Housing crisis amid a pandemic: Parc-Ex residents call for pause on evictions. Retrieved from https://www.cbc.ca/news/canada/montreal/parc-extension-evictions-housing-covid-19-1.5611460
+
+CBC News. (2020b, May 20). Civil rights groups call for action after Bordeaux jail inmate dies from COVID-19. Retrieved from https://www.cbc.ca/news/canada/montreal/quebec-inmate-dies-covid-19-1.5577736
+
+Cherry, P. (2020, June 5). Detainee at Bordeaux jail says little has changed after lockdown ended. https://montrealgazette.com/news/local-news/detainee-at-bordeaux-jail-says-little-has-changed-after-lockdown-ended
+
+Goudrault, Z. (2020a, May 20). Sainte-Catherine presque entièrement piétonne la fin de semaine. Retrieved from https://journalmetro.com/actualites/montreal/2447223/la-rue-sainte-catherine-ouest-deviendra-pietonne-la-fin-de-semaine-cet-ete/
+
+Goudrault, Z. (2020b, May 20). BIXI: un excédent insuffisant pour compenser la crise du coronavirus. Retrieved from https://journalmetro.com/actualites/montreal/2447286/bixi-un-excedent-insuffisant-pour-compenser-la-crise-du-coronavirus/
+
+Grieg, K. & Kovac, A. (2020, May 17). Caregivers still banned from several Quebec long-term care homes. Retrieved from https://montreal.ctvnews.ca/caregivers-still-banned-from-several-quebec-long-term-care-homes-1.4943707
+
+Miller Llana, S. & Kestler-D’amours, J. (2020, May 28). ‘They didn’t get to die with dignity’: Canada reexamines care for seniors. Retrieved from https://www.csmonitor.com/World/Americas/2020/0528/They-didn-t-get-to-die-with-dignity-Canada-reexamines-care-for-seniors
+
+INSPQ. (2020). Données COVID-19 au Québec. Retrieved from https://www.inspq.qc.ca/covid-19/donnees/ligne-du-temps
+
+Lowrie, M. (2020, May 19th). Asylum seekers find work in Quebec's COVID-19 hard-hit care homes. Retrieved from https://www.nationalobserver.com/2020/05/19/news/asylum-seekers-find-work-quebecs-covid-19-hard-hit-care-homes
+
+Luft, A. (2020a). COVID-19 in Montreal. Retrieved from https://montreal.ctvnews.ca/covid-19/see-the-map-tracking-covid-19-cases-across-montreal-1.4874695 
+
+Luft, A. (2020b). Montreal to use city buses as mobile COVID-19 testing units in hardest-hit boroughs. Retrieved from https://montreal.ctvnews.ca/montreal-to-use-city-buses-as-mobile-covid-19-testing-units-in-hardest-hit-boroughs-1.4924144 
+
+Luft, A. (2020c, May 12). Is public health a privilege? Retrieved from  https://storymaps.arcgis.com/stories/c60a47ff9feb42e691bce0718d651249
+
+Maratta, A. S. (2020, May 5). Coronavirus: Montreal to transform city buses into mobile testing clinics. Retrieved from https://globalnews.ca/news/6903092/montreal-buses-coronavirus-testing/
+
+Ouellette Vézina, H. (2020a, May 15). Déconfinement: le métro perdra du terrain au profit de l’auto à Montréal. Retrieved from https://journalmetro.com/actualites/montreal/2446046/deconfinement-delaissement-massif-metro-voiture/
+
+Ouellette Vézina, H. (2020b, May 14). Parc-Extension: un élu appelle à intensifier et «adapter» le dépistage. https://journalmetro.com/actualites/montreal/2445966/parc-extension-un-elu-appelle-a-intensifier-et-adapter-le-depistage/
+
+Ross, S. (2020a, May 5). A second inmate in a Canadian federal prison has died of COVID-19. Retrieved from https://montreal.ctvnews.ca/a-second-inmate-in-a-canadian-federal-prison-has-died-of-covid-19-1.4926031
+
+Ross, S. (2020b, May 31). Prison with Canada’s worst COVID-19 outbreak houses Inuit inmates. Retrieved from https://montreal.ctvnews.ca/prison-with-canada-s-worst-covid-19-outbreak-houses-inuit-inmates-1.4962407
+
+Stevenson, V. & Shingler, B. (2020, May 15). COVID-19's devastating toll on families in Montreal's poorest neighbourhoods. Retrieved from https://www.cbc.ca/news/canada/montreal/montreal-low-income-inequality-covid-19-1.5570296
+
+Valiante, S. & Banerjee, S. (2020, May 14). 'The society failed': Legault makes first trip to Montreal since pandemic began. Retrieved from https://www.nationalobserver.com/2020/05/15/news/society-failed-legault-makes-first-trip-montreal-pandemic-began
+
+Ville de Montréal. (2020, May 15). Les voies actives sécuritaires : un plan de déplacements estival. Retrieved from https://montreal.ca/articles/les-voies-actives-securitaires-un-plan-de-deplacements-estival
+
+Wilson, K., & Cardwell, N. (2012). Urban Aboriginal health: Examining inequalities between Aboriginal and non‐Aboriginal populations in Canada. The Canadian Geographer/Le Géographe Canadien, 56(1), 98-116.
