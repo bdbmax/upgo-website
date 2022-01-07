@@ -1,15 +1,4 @@
 <footer class="site-footer">
-  {{ if or (site.GetPage "terms.md") (site.GetPage "privacy.md") }}
-  <p class="powered-by">
-    {{ with site.GetPage "privacy.md" }}
-      {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
-    {{ end }}
-    {{ with site.GetPage "terms.md" }}
-      {{ if site.GetPage "privacy.md" }} &middot; {{ end }}
-      {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
-    {{ end }}
-  </p>
-  {{ end }}
 
   <p>
     <center></c><img src="/img/mcgill.png" width = 200></center>
@@ -31,5 +20,9 @@
       </a>
     </span>
     {{ end }}
+    <span class="privacy">
+      <a href="/privacy">Privacy policy.
+      </a>
+    </span>
   </p>
 </footer>
