@@ -12,14 +12,19 @@ subtitle = ""
   # Choose which groups/teams of users to display.
   #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
 user_groups = ["Principal Investigator",
-               "Researchers",
-               "Alumni"]
+               "Researchers"]
 
 [design]
   # Show user's social networking links? (true/false)
   show_social = false
 
   # Show user's interests? (true/false)
-  show_interests = true
+  show_interests = false
 
 +++
+
+<h2>
+  <a href = "http://127.0.0.1:4321/#alumni"> 
+    Alumni
+  </a>
+</h2>

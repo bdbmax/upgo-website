@@ -15,7 +15,7 @@ name: Ivana Nedyalkova
 organizations:
 - name: McGill University
   url: ""
-role: Master's research assistant
+role: Former Master's research assistant
 superuser: false
 user_groups:
 - Alumni

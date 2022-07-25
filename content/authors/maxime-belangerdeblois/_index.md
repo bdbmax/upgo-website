@@ -22,7 +22,7 @@ name: Maxime Bélanger De Blois
 organizations:
 - name: McGill University
   url: ''
-role: Master's research assistant
+role: Post-graduate research assistant
 social:
 - icon: linkedin
   icon_pack: fab
@@ -35,4 +35,4 @@ user_groups:
 - Researchers
 ---
 
-Currently an urban planning master’s student at McGill University, Maxime previously completed a BA with honours in Political Science and Economics at Université Laval, together with a supplementary degree in Spanish language. As a bachelor's student, he delved into the application of sustainable development ideas to economic theories. His current academic interests lie in the application of political and economic concepts to territorial and environmental issues. In pursuing these objectives, Maxime believes data analysis and visualization techniques to be essential. He is now a research assistant with the Urban Politics and Governance Research group, where he primarily focuses on the analysis and impact of the short-term rental market in North American cities in the context of COVID-19.
+A graduate of the urban planning master’s program at McGill University, Maxime previously completed a BA with honours in Political Science and Economics at Université Laval, together with a supplementary degree in Spanish language. As a bachelor's student, he delved into the application of sustainable development ideas to economic theories. His current academic interests lie in the application of political and economic concepts to territorial and environmental issues. In pursuing these objectives, Maxime believes data analysis and visualization techniques to be essential. He is now a research assistant with the Urban Politics and Governance Research group, where he primarily focuses on the analysis and impact of the short-term rental market in North American cities in the context of COVID-19.

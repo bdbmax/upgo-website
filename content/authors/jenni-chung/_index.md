@@ -6,7 +6,7 @@ education:
   courses:
   - course: Master of Urban Planning
     institution: McGill University
-    year: 2021
+    year: 2022
   - course: Associate of Arts in Sociology
     institution: Community College of Denver
     year: 2019
@@ -18,7 +18,7 @@ name: Jenni Chung
 organizations:
 - name: McGill University
   url: ""
-role: Master's research assistant
+role: Former Master's research assistant
 superuser: false
 user_groups:
 - Alumni

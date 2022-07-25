@@ -4,6 +4,9 @@ authors:
 bio: "My research interests include housing justice, housing financialization, and urban governance."  
 education:
   courses:
+  - course: PhD in Urban Planning
+    institution: University of Waterloo
+    year: 2025
   - course: Master of Urban Planning
     institution: McGill University
     year: 2021
@@ -19,7 +22,7 @@ name: Cloé St-Hilaire
 organizations:
 - name: McGill University
   url: ''
-role: Master's research assistant
+role: PhD research assistant
 social:
 - icon: github
   icon_pack: fab
@@ -34,4 +37,4 @@ superuser: no
 user_groups: 
 - Researchers
 ---
-Cloé St-Hilaire is currently a Master’s student in Urban Planning at McGill University. She completed a Bachelor of Commerce in Sustainability Management and Urban Studies in 2019. Practical application of her education was gained while working in the social enterprise sector as a food security analyst for a vertical aquaponics start-up. Cloé also worked to promote female entrepreneurship in Senegalese female-led agriculture businesses. Her research interests are at the intersection of housing justice, financialization and the implication of the platform economy in the housing system. She is currently working as a research assistant with the UPGo group, primarily working on the dynamics of the short- and long-term rental markets in light of the COVID-19 pandemic.
+Cloé St-Hilaire is currently a PhD student in Urban Planning at the University of Waterloo. She completed a Master of Urban Planning in 2021 and a Bachelor of Commerce in Sustainability Management and Urban Studies in 2019, both at McGill University. Practical application of her education was gained while working in the social enterprise sector as a food security analyst for a vertical aquaponics start-up. Cloé also worked to promote female entrepreneurship in Senegalese female-led agriculture businesses. Her research interests are at the intersection of housing justice, financialization and the implication of the platform economy in the housing system. She is currently working as a research assistant with the UPGo group, primarily working on the dynamics of the short- and long-term rental markets in light of the COVID-19 pandemic.

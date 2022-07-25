@@ -1,7 +1,7 @@
 ---
 authors: 
 - charlotte-belot
-bio: My research interests include participatory urban design/planning, design/data visualization, and housing justice. 
+bio: My research interests include participatory urban design + placemaking, public space, and social equity.
 education:
   courses:
   - course: Master of Urban Planning
@@ -12,9 +12,9 @@ education:
     year: 2018
 email: charlotte.belot@mail.mcgill.ca
 interests:
-- Participatory urban design and planning
-- Design and data visualization
-- Housing justice
+- Participatory urban design + placemaking
+- Public space
+- Social equity
 name: Charlotte Belot
 organizations:
 - name: McGill University
@@ -31,4 +31,4 @@ superuser: no
 user_groups: 
 - Researchers
 ---
-Charlotte is a new urban planner and designer. She graduated from McGill's Master of Urban Planning program in 2020 and previously completed a bachelor's degree in Urban Studies and Architecture at the University of Calgary. She is French-English bilingual and skilled in graphic design, design visualization, and data-driven site analysis. As a student, Charlotte completed internships at multiple levels of government and with UPGo at McGill. She also has experience engaging diverse communities, including the Archdiocese of Montreal and the Calgary Chinatown Community Association, and is passionate about community planning. Over the course of her education, she developed an intense curiosity for the ways in which narrative is used to frame urban issues, and plans to use her creative and analytical skills to centre equity in her practice. She is currently freelancing as a researcher, translator, graphic designer, and urban design project assistant.   
+Charlotte is a new urban planner and designer. She graduated from McGill's Master of Urban Planning program in 2020 and previously completed a bachelor's degree in Urban Studies and Architecture at the University of Calgary. She is French-English bilingual and skilled in site analysis for urban design projects, data analysis, and policy research. As a student, Charlotte completed internships at multiple levels of government and with UPGo at McGill. She is currently a junior urban designer at a Montreal firm, working towards her membership with the Ordre des urbanistes du Québec (OUQ), and assisting with occasional UPGo projects.   
