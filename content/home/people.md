@@ -24,7 +24,7 @@ user_groups = ["Principal Investigator",
 +++
 
 <h2>
-  <a href = "http://127.0.0.1:4321/#alumni"> 
+  <a href = "http://http://upgo.lab.mcgill.ca//#alumni"> 
     Alumni
   </a>
 </h2>
